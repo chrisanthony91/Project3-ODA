@@ -17,7 +17,7 @@ html, body{
 }
 
 li {
-    margin:1000;
+    margin:1;
 }
 
 .lead{
@@ -34,3 +34,13 @@ li {
 
 
 /* custom style */
+.nav-header{
+    color:lightblue;
+    
+}
+
+
+
+
+
+
