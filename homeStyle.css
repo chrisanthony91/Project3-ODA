@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+}
+p{
+    font-family: 'Open Sans', sans-serif;    
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-link{
+    color: #001739;
+}
+.navbar-nav .nav-link:hover{
+    color: #ec1c24;
+}
+.navbar-nav .nav-link:focus{
+    color: #b1151b;
+}
+
+.btn-outline-oda{
+   color: #00abe3;
+   background-color: transparent;
+   background-image: none;
+   border-color: #00abe3; 
+}
+.btn-outline-oda:hover{
+    color: white;
+    background-color: #00abe3;
+    border-color: #0080aa; 
+ }
