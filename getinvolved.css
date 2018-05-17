@@ -1,6 +1,6 @@
 
 /* reset */
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -8,29 +8,13 @@
 
 html, body{
     height:100%;
-}
+} */
 
 /* global */
 
-.container{
+/* div{
     width:100%;
-}
-
-li {
-    margin:1;
-}
-
-.lead{
-    color:red;
-}
-
-#wrapper {
-    position: relative;
-}
-#wrapper div, #wrapper video {
-    position: absolute;
-    top: 0;
-} 
+} */
 
 
 /* custom style */
@@ -43,6 +27,11 @@ h1{
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size:22px;
+}
+
 .nav nav-pills flex-column flex-sm-row{
     font-size:50px;
 }
@@ -51,8 +40,43 @@ h1{
     border-width:50px;
 }
 
-.figcaption{
-    
+.container, first-paragraph {
+    margin:10px;
 }
 
+.container{
+    margin:40px 50px 20px;
+}
 
+.sub-nav{
+    font-size:20px;
+    margin:30px;
+}
+
+.container, right-image{
+    margin:80px 200px;
+}
+
+.col-md-5{
+    margin:50px 400px;
+}
+
+.font-weight-bold{
+    font-family: 'Open Sans', sans-serif;
+    font-size:22px;
+}
+
+.four-paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-size:17px;
+    margin:20px;
+}
+
+.diver-form{
+    margin:10px 100px 10px 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:17px;
+}
+.form-check-label{
+    font-size:13px;
+}

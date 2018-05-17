@@ -94,7 +94,7 @@
                         <div class="overlay">
                             <h1 class="text-warning">Get Involved</h1> -->
                         </div>  
-                <img class="d-block w-100" width="800" height="750" src="/Users/StacyWang 1/Library/Mobile Documents/com~apple~CloudDocs/UX:UI/UCI/Project 3- Ocean Deffender Alliance/Project3-ODA/images/scuba3.jpeg" alt="First slide">
+                <img class="d-block w-100 img-fluid" width="800" height="750" src="/Users/StacyWang 1/Library/Mobile Documents/com~apple~CloudDocs/UX:UI/UCI/Project 3- Ocean Deffender Alliance/Project3-ODA/images/scuba3.jpeg" alt="First slide">
                 <div class="carousel-caption font-weight-bold">
                     <h1>Get Involved</h1>
                 </div>    
@@ -102,54 +102,113 @@
         </div>    
     </div> 
  
+
+<div class="sub-nav">
 <ul class="nav justify-content-center col-md centered">
     <li class="nav-item">
-    <nav class="nav nav-pills flex-column flex-sm-row" width="500">
-    <a class="flex-sm-fill text-sm-center nav-link active" href="#">Volunteer At Sea</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Vlounteer On Shore</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Donation</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Report Debris</a>
-</nav>
-
-<!-- <div class="card mb-3">
-        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <img class="card-img-bottom" src=".../100px180/" alt="Card image cap">
-      </div> -->
+        <nav class="nav nav-pills flex-column flex-sm-row" width="700">
+            <a class="flex-sm-fill text-sm-center nav-link active" href="#">Volunteer At Sea</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Vlounteer On Shore</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Donation</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Report Debris</a>
+        </nav>
+    </li>
+</ul>        
+</div>
 
     <!-- pic floats right -->
-    <figure class="figure">
+<!-- figure? why i can't take our and also can't use /figure? -->
+<figure class="figure">  
 
-    <img src="https://picsum.photos/600/400?image=469" class="rounded float-right rounded-circle border border-primary" alt="image469">
+    <div class="container right-image">
+        <img src="https://picsum.photos/600/400?image=469" class="rounded float-right rounded border border-primary img-fluid" alt="image469">
+    </div>
 
-    
     <div class="container">
         <div class="row">
-            <div class="col-md-8 centered alert alert-primary text-center">
-                <h3>Volunteer at The Sea</h3>
+            <div class="col-md-10 centered alert alert-primary text-center text-capitalize font-weight-bold">
+                <h3>Volunteer at the sea</h3>
             </div>
         </div>
     </div>
 
-    <div class="container">
-            <div class="col-md-4 figure-caption text-left float-center">
-                <p>If you love to dive, appreciate the beauty of the underwater world, 
+    <div class="container first-paragraph">
+            <div class="col-md-4 figure-caption text-justify">
+                <h5>If you love to dive, appreciate the beauty of the underwater world, 
                 and are looking for a way to “give back,” you should apply to join our crew. 
                 We really do want your help, but our mission is a serious one and we 
-                have minimum requirements for participation as described below.</p>
+                have minimum requirements for participation as described below.</h5>
             </div>
     </div>
+
+    <div class="col-md-5 text-justify">
+            <h4 class="font-weight-bold">1. Completion of Rescue Diver Certification</h4>
+                <p class="four-paragraph">Divers must have proof of completion of Rescue Diver certification from an internationally 
+                    accredited dive education organization such as PADI or NAUI, and proof of current Divers 
+                    Alert Network (DAN). </p>
+            
+            <h4 class="font-weight-bold">2. Your Safety is The Most Important Thing For Us </h4>
+                <p class="four-paragraph">Safety is our number one consideration, so you must complete ODA’s internal training as well 
+                    before you may fully participate in. </p>
+
+            <h4 class="font-weight-bold">3. Dive Accident Insurance coverage </h4>
+                <p class="four-paragraph">Divers must have proof of completion of Rescue Diver certification from an internationally 
+                    accredited dive education organization such as PADI or NAUI. </p> 
+            
+            <h4 class="font-weight-bold">4. Safety is our number one consideration </h4>
+                <p class="four-paragraph">So you must complete ODA’s internal training as well before you may fully participate in 
+                    our ocean debris removal activities.</p>                 
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-10 centered alert alert-primary text-center font-weight-bold">
+                    <h3>Dive Crew Sign Up Form</h3>
+                </div>
+            </div>
+    </div>
+
+    <form class="diver-form">
+            <div class="form-group col-md-6">
+              <label for="exampleInputEmail1">Name  *</label>
+              <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="First name/ Last name">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="exampleInputEmail1">Email address  *</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="exampleInputPhoneNumber">Phone Number  *</label>
+              <input type="phone-number" class="form-control" id="exampleInputPhoneNumber" placeholder="Phone Number">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="exampleInputDateOfBirth">Date Of Birth  *</label>
+                <input type="DateOfBirth" class="form-control" id="exampleInputDateOfBirth" placeholder="MM/DD/YYYY">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="exampleInputSocialMediaLink">Social Media Link (i.e FaceBook, Ingstagram)</label>
+                <input type="URL" class="form-control" id="exampleInputSocialMediaLink" placeholder="URL">
+            </div>
+
+
+            <div class="form-group">
+              <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+              <p class="form-check-label col-md-6">Privacy note: Your privacy is important to us. Please know that ODA will never sell, trade, or otherwise release
+                    any of this information to any entity—except as required by law. This information is solely
+                    for internal and/or emergency purposes.</p>
+            </div>
+
+            <div class="container centered">
+                <!-- <div class="row"> -->
+            <button type="next" class="btn btn-primary col-md-2 text-center">Next</button>
+            </div>
+    </form>
+                  
         
     <!-- <div class="alert alert-primary text-center">
         <h3>Volunteer at The Sea</h3>
