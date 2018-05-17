@@ -14,91 +14,34 @@
         <!-- Custom Style Sheet -->
         <link href="homeStyle.css" type="text/css" rel="stylesheet">
         <!-- Hotjar Tracking Code  -->
-
+        
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-sticky-top" id="navigation">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" width="10%" class="d-inline-block align-middle" alt="D.O.I Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="heroSpace">
+            <video width="100%" height="auto" autoplay loop>
+                <source src="images/sampleVideo.mp4" type="video/mp4">
+            </video>
+        </div>
+            
+        <a href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> <!--hamburger button-->
-                  
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav ml-auto">
-                    <!--about link-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>About</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">sup-page</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">sup-page</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">sup-page</a>
-                        </div>
-                    </div>
-                    <!--departments link-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Departments</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">sup-page</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">sup-page</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">sup-page</a>
-                        </div>
-                    </div>
-                    <!--priorities link-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Priorities</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="">Something else here</a>
-                        </div>
-                    </div>
-                    <!--News link-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>News</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                    <!--Join link-->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Join Us</p>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="form-inline my-2 my-lg-0" action="search.html" style="padding-left: 3%;">
-                    <button class="btn btn-outline-oda my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </nav>
-        
-    </body>
-</html>
+            
+            <!-- Nav Links  -->
+            <div class="collapse navbar-collapse" id="navContent"> 
+                <ul class="navbar-nav ml-auto">
+                    <!--Who We Are link-->
+                    <li><a class="nav-link" href="#">Who We Are</a></li>
+                    <!--What We Do link-->
+                    <li><a class="nav-link" href="whatWeDo.html">What We Do</a></li>
+                    <!--Get Involved link-->
+                    <li><a class="nav-link" href="getInvolved.html">Get Involved</a></li>
+                    <!--Contact link-->
+                    <li><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-outline-oda my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
