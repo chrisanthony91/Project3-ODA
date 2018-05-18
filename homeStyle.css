@@ -1,36 +1,138 @@
 /* html, body{
     height: 100%;
 } */
+body{
+    margin:0;
+    padding:0;
+}
 p{
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;  
     padding: 0;
     margin: 0;
 }
+h1{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+h2{
+    font-family: 'Allerta', sans-serif;
+    margin-bottom: 30px;
+}
+
 td{
     vertical-align: middle;
 }
+ul.nav li a{
+    font-size: 1.2em;
+    font-family: 'Allerta', sans-serif;
+    color: black;
+    padding-top: 5px;
+    /* padding-bottom: 0px; */
+}
+ul.nav li a:hover{
+    color: red;
+}
 
 .navbar{
-    position: sticky;
-    top: 10px;
+    /* position: sticky; 
+    top: 10px;*/
+    z-index: 100;
     padding: 0;
-    width: 85%;
-    height: 80px;
+    /* width: 85%; */
+    height: 70px;
     float: left;
-    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.8); */
     font-family: 'Allerta', sans-serif;
 }
-.btn-outline-oda{
+ul.nav li a.btn-outline-oda{
    color: #00abe3;
    background-color: transparent;
    background-image: none;
    border-color: #00abe3;
    margin: 0 20px;
 }
-.btn-outline-oda:hover{
+ul.nav li a.btn-outline-oda:hover{
     color: white;
     background-color: #00abe3;
     border-color: #0080aa; 
+}
+ul.nav li a.btn-outline-oda:focus{
+    color: white;
+    background-color: #0080aa;
+    border-color: #0080aa; 
+}
+a.btn-block{
+    height: inherit;
+    padding-top: 22px;
+}
+a.btn.btn-oda.btn-lg{
+    color: white;
+    background-color: #00abe3;
+    margin-top: 30px;
+    border-radius: 0;
+ }
+a.btn.btn-oda.btn-lg:hover{
+     color: black;
+     background-color: #33bce9;
+ }
+a.btn.btn-oda.btn-lg:focus{
+     color: white;
+     background-color: #0080aa;
+}
+a.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    padding: 0;
+    max-height: 20px;
+    max-width: 20px;
+} 
+a.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    padding: 0;
+    max-height: 20px;
+    max-width: 20px;
+}
+a.carousel-control-prev.noText{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 0;
+    max-height: 20px;
+    max-width: 20px;
+} 
+a.carousel-control-next.noText{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    padding: 0;
+    max-height: 20px;
+    max-width: 20px;
+}  
+ol.carousel-indicators.noText{
+    position:absolute;
+    bottom: 5%;
+}
+.uniform-1{
+    height: 130px;
+}
+.uniform-3{
+    height: 300px;
+}
+.uniform-5{
+    height: 520px;
+}
+.cImage{
+    padding:0;
+    width: 100%;
+}
+.center{
+    position: absolute;
+    right: 0%;
+    height: 100%;
 }
 
 #navLogo{
@@ -40,45 +142,145 @@ td{
     z-index: 100000;
     width: 8%;
 }
-#navContent .navbar-nav .nav-link{
+#navContent.navbar-nav .nav-link{
     color: #001739;
     text-align: center;
 }
-#navContent .navbar-nav .nav-link:hover{
+#navContent.navbar-nav.nav-link:hover{
     color: #f04950;
 }
-#navContent .navbar-nav .nav-link:focus{
+#navContent.navbar-nav.nav-link:focus{
     color: #b1151b;
 }
 #takeAction{
-    position: sticky;
-    top: 10px;
+    height:70px;
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: 1.2em;
-    float: right;
-    width: 15%;
-    height:80px;
-    background-color: #ec1c24;
-    color: white;
-    /* padding:  10px; */
 }
-#takeAction:hover{
+#takeAction a.btn.btn-danger{
+    border-radius:0px;
+    background-color:#ec1c24;
+}
+#takeAction a.btn.btn-danger:hover{
     background-color: #f04950;
-    cursor: pointer;
 }
-#takeAction:focus{
+#takeAction a.btn.btn-danger:focus{
     background-color: #b1151b;
-    cursor: pointer;
 }
-#taIcon{
-    width: 70px;
-    height: auto;
+#navigation{
+    margin: 0px;
+}
+#navigation.navbar.navbar-light.bg-light.navbar-expand-lg{
+    width: 100%;
 }
 #heroSpace{
+    top: 0;
     padding: 0;
-    margin: 0;
+    margin-top: 0px;
     width: 100%;
-    height: 654px;
+    height: 700px;
     overflow: hidden;
 }
- 
+#heroSpace video{
+    margin: 0;
+    top: 0;
+}
+#heroText{
+    z-index: 10;
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    /* padding: 20px 30px 30px 100px; */
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+#videoOverlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 770px;
+    margin: 0;
+    background-color: rgba(0, 23, 57, 0.4);
+    z-index: 5;
+    overflow: hidden;
+}
+#firstRow{
+    background-image: url(images/oceanPlastics.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#theProblem, #ourMission, #whatWeDo{
+    width: 100%;
+    text-align: center;
+}
+#theProblem{
+    padding: 60px 160px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#ourMission{
+    padding: 60px 100px;
+    color: white;
+    background-color: rgba(0, 35, 76, 0.75);
+}
+#whatWeDo{
+    /* height: 500px; */
+    padding: 60px 120px 0px 120px;
+    background-color: white;
+}
+#cta{
+    background-color: #00abe3;
+}
+#ctaIcon{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    height: 120px;
+}
+#triangle{
+    background-image: url(images/triangle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+#ctaButton{
+    border-radius:0px;
+}
+#ctaButton.btn.btn-danger{
+    background-color:#ec1c24;
+}
+#ctaButton.btn.btn-danger:hover{
+    background-color: #f04950;
+}
+#ctaButton.btn.btn-danger:focus{
+    background-color: #b1151b;
+}
+#stats{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #001739;
+    color: #33bce9;
+}
+#stats h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+/* bubble css */
+    .bubbles {
+    display: inline-block;
+    position: relative;
+    }
+    
+    .bubbles h1 {
+    position: relative;
+    margin: 1em 0 0;
+    color: #fff;
+    z-index: 2;
+    }
+    
+    .individual-bubble {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 10px;
+    background-color: #fff;
+    z-index: 1;
+    }
