@@ -16,7 +16,82 @@ html, body{
     width:100%;
 } */
 
-
+td{
+    vertical-align: middle;
+ }
+ ul.nav li a{
+    font-size: 1.2em;
+    font-family: 'Allerta', sans-serif;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 0px;
+ }
+ ul.nav li a:hover{
+    color: red;
+ }
+ 
+ .navbar{
+    /* position: sticky;
+    top: 10px;*/
+    padding: 0;
+    /* width: 85%; */
+    height: 50px;
+    float: left;
+    background-color: white;
+    font-family: 'Allerta', sans-serif;
+ }
+ .btn-outline-oda{
+   color: #00abe3;
+   background-color: transparent;
+   background-image: none;
+   border-color: #00abe3;
+   margin: 0 20px;
+ }
+ .btn-outline-oda:hover{
+    color: white;
+    background-color: #00abe3;
+    border-color: #0080aa; 
+ }
+ .btn-outline-oda:focus{
+    color: white;
+    background-color: #0080aa;
+    border-color: #0080aa; 
+ }
+ .btn-block{
+    height: 100%;
+ }
+ #navLogo{
+    position: fixed;
+    left: 20px;
+    top: 0;
+    z-index: 10000;
+    width: 8%;
+ }
+ #navContent .navbar-nav .nav-link{
+    color: #001739;
+    text-align: center;
+ }
+ #navContent .navbar-nav .nav-link:hover{
+    color: #f04950;
+ }
+ #navContent .navbar-nav .nav-link:focus{
+    color: #b1151b;
+ }
+ #takeAction{
+    font-family: 'Allerta Stencil', sans-serif;
+ }
+ #takeAction button.btn-danger{
+    background-color:#ec1c24;
+ }
+ #takeAction button.btn-danger:hover{
+    background-color: #f04950;
+ }
+ #takeAction button.btn-danger:focus{
+    background-color: #b1151b;
+ }
+ #navigation{
+    margin: 0px;
+ }
 /* custom style */
 .nav-header{
     color:lightblue;
@@ -45,7 +120,11 @@ h5{
 }
 
 .container, first-paragraph {
-    margin:10px;
+    margin:10px auto;
+}
+
+.col-md-4, figure-caption, text-justify{
+    margin: 10px;
 }
 
 .container{
