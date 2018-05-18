@@ -31,7 +31,7 @@
 <div class="container-fluid">
 
 <nav class="navbar navbar-expand-lg bg-white">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
     <img src="/Users/StacyWang 1/Library/Mobile Documents/com~apple~CloudDocs/UX:UI/UCI/Project 3- Ocean Deffender Alliance/Project3-ODA/images/logo.png" width="80" height="80"> 
     Ocean Defenders Alliance </a>
 
@@ -55,7 +55,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link nav-header" href="#"> <h4>Get Involved</h4> <span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-header" href="getinvolved.html"> <h4>Get Involved</h4> <span class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item">
@@ -88,13 +88,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                    <!-- <video class="d-block w-100" width="800" height="700" onclick="play();">
-                        <source src="..../Inspirations/ODA video/Defending the Deep.mp4" type="video/mp4"> 
-                          </video>
-                        <div class="overlay">
-                            <h1 class="text-warning">Get Involved</h1> -->
-                        </div>  
-                <img class="d-block w-100 img-fluid" width="800" height="750" src="/Users/StacyWang 1/Library/Mobile Documents/com~apple~CloudDocs/UX:UI/UCI/Project 3- Ocean Deffender Alliance/Project3-ODA/images/scuba3.jpeg" alt="First slide">
+                <img class="d-block img-fluid" width="1440" height="500" src="/Users/StacyWang 1/Library/Mobile Documents/com~apple~CloudDocs/UX:UI/UCI/Project 3- Ocean Deffender Alliance/Project3-ODA/images/scuba3.jpeg" alt="First slide">
                 <div class="carousel-caption font-weight-bold">
                     <h1>Get Involved</h1>
                 </div>    
@@ -108,7 +102,7 @@
     <li class="nav-item">
         <nav class="nav nav-pills flex-column flex-sm-row" width="700">
             <a class="flex-sm-fill text-sm-center nav-link active" href="#">Volunteer At Sea</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Vlounteer On Shore</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">Volunteer On Shore</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="#">Donation</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="#">Report Debris</a>
         </nav>
@@ -169,50 +163,81 @@
     </div>
 
     <form class="diver-form">
-            <div class="form-group col-md-6">
-              <label for="exampleInputEmail1">Name  *</label>
-              <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="First name/ Last name">
+            <div class="form-group col-md">
+              <label for="validationCustom01">Name  *</label>
+              <input type="text" class="form-control" id="validationCustom01" aria-describedby="emailHelp" placeholder="First name/ Last name">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
 
-            <div class="form-group col-md-6">
-                <label for="exampleInputEmail1">Email address  *</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="form-group col-md">
+                <label for="validationCustom02">Email address  *</label>
+                <input type="text" class="form-control" id="validationCustom02" aria-describedby="emailHelp" placeholder="Enter email">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <div class="invalid-feedback">
+                        Please provide a valid email address.
+                </div>
             </div>
 
-            <div class="form-group col-md-6">
-              <label for="exampleInputPhoneNumber">Phone Number  *</label>
-              <input type="phone-number" class="form-control" id="exampleInputPhoneNumber" placeholder="Phone Number">
+            <div class="form-group col-md">
+              <label for="validationCustom03">Phone Number  *</label>
+              <input type="number" class="form-control" id="validationCustom03" placeholder="Phone Number">
+              <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
 
-            <div class="form-group col-md-6">
-                <label for="exampleInputDateOfBirth">Date Of Birth  *</label>
-                <input type="DateOfBirth" class="form-control" id="exampleInputDateOfBirth" placeholder="MM/DD/YYYY">
+            <div class="form-group col-md">
+                <label for="validationCustom04">Date Of Birth  *</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="MM/DD/YYYY">
+                <div class="valid-feedback">
+                        Looks good!
+                </div>
             </div>
 
-            <div class="form-group col-md-6">
-                <label for="exampleInputSocialMediaLink">Social Media Link (i.e FaceBook, Ingstagram)</label>
-                <input type="URL" class="form-control" id="exampleInputSocialMediaLink" placeholder="URL">
+            <div class="form-group col-md">
+                <label for="validationCustom05">Social Media Link (i.e FaceBook, Ingstagram)</label>
+                <input type="URL" class="form-control" id="validationCustom05" placeholder="URL">
+                <div class="invalid-feedback">
+                        Please provide a valid link.
+                </div>
             </div>
 
 
             <div class="form-group">
               <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-              <p class="form-check-label col-md-6">Privacy note: Your privacy is important to us. Please know that ODA will never sell, trade, or otherwise release
+              <p class="form-check-label col-md">Privacy note: Your privacy is important to us. Please know that ODA will never sell, trade, or otherwise release
                     any of this information to any entity—except as required by law. This information is solely
                     for internal and/or emergency purposes.</p>
             </div>
 
             <div class="container centered">
                 <!-- <div class="row"> -->
-            <button type="next" class="btn btn-primary col-md-2 text-center">Next</button>
+            <button type="next" class="btn btn-danger col-md-2 text-center" href="#">Next</button>
             </div>
     </form>
-                  
-        
-    <!-- <div class="alert alert-primary text-center">
-        <h3>Volunteer at The Sea</h3>
-    </div>  -->
+
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+    </script>
        
 
 <!-- JS code -->

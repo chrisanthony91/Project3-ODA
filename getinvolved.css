@@ -27,6 +27,10 @@ h1{
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+h3{
+    font-family: 'Allerta', sans-serif;
+}
+
 h5{
     font-family: 'Open Sans', sans-serif;
     font-size:22px;
@@ -72,8 +76,9 @@ h5{
     margin:20px;
 }
 
-.diver-form{
-    margin:10px 100px 10px 100px;
+.diver-form{	
+    margin: 0 auto;
+	width: 50%;
     font-family: 'Open Sans', sans-serif;
     font-size:17px;
 }
