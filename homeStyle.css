@@ -1,0 +1,84 @@
+/* html, body{
+    height: 100%;
+} */
+p{
+    font-family: 'Open Sans', sans-serif;    
+    padding: 0;
+    margin: 0;
+}
+td{
+    vertical-align: middle;
+}
+
+.navbar{
+    position: sticky;
+    top: 10px;
+    padding: 0;
+    width: 85%;
+    height: 80px;
+    float: left;
+    background-color: white;
+    font-family: 'Allerta', sans-serif;
+}
+.btn-outline-oda{
+   color: #00abe3;
+   background-color: transparent;
+   background-image: none;
+   border-color: #00abe3;
+   margin: 0 20px;
+}
+.btn-outline-oda:hover{
+    color: white;
+    background-color: #00abe3;
+    border-color: #0080aa; 
+}
+
+#navLogo{
+    position: fixed;
+    left: 20px;
+    top: 0;
+    z-index: 100000;
+    width: 8%;
+}
+#navContent .navbar-nav .nav-link{
+    color: #001739;
+    text-align: center;
+}
+#navContent .navbar-nav .nav-link:hover{
+    color: #f04950;
+}
+#navContent .navbar-nav .nav-link:focus{
+    color: #b1151b;
+}
+#takeAction{
+    position: sticky;
+    top: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.2em;
+    float: right;
+    width: 15%;
+    height:80px;
+    background-color: #ec1c24;
+    color: white;
+    /* padding:  10px; */
+}
+#takeAction:hover{
+    background-color: #f04950;
+    cursor: pointer;
+}
+#takeAction:focus{
+    background-color: #b1151b;
+    cursor: pointer;
+}
+#taIcon{
+    width: 70px;
+    height: auto;
+}
+#heroSpace{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 654px;
+    overflow: hidden;
+}
+ 
