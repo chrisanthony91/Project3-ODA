@@ -16,82 +16,126 @@ html, body{
     width:100%;
 } */
 
+body{
+    margin:0;
+    padding:0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;  
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+h2{
+    font-family: 'Allerta', sans-serif;
+    margin-bottom: 30px;
+}
+h6{
+    margin: 0;
+}
+
 td{
     vertical-align: middle;
- }
- ul.nav li a{
+}
+ul.nav li a{
     font-size: 1.2em;
     font-family: 'Allerta', sans-serif;
     color: black;
     padding-top: 5px;
-    padding-bottom: 0px;
- }
- ul.nav li a:hover{
+    /* padding-bottom: 0px; */
+}
+ul.nav li a:hover{
     color: red;
- }
- 
- .navbar{
-    /* position: sticky;
+}
+
+.navbar{
+    /* position: sticky; 
     top: 10px;*/
+    z-index: 100;
     padding: 0;
     /* width: 85%; */
-    height: 50px;
+    height: 70px;
     float: left;
-    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.8); */
     font-family: 'Allerta', sans-serif;
- }
- .btn-outline-oda{
+}
+ul.nav li a.btn-outline-oda{
    color: #00abe3;
    background-color: transparent;
    background-image: none;
    border-color: #00abe3;
    margin: 0 20px;
- }
- .btn-outline-oda:hover{
+}
+ul.nav li a.btn-outline-oda:hover{
     color: white;
     background-color: #00abe3;
     border-color: #0080aa; 
- }
- .btn-outline-oda:focus{
+}
+ul.nav li a.btn-outline-oda:focus{
     color: white;
     background-color: #0080aa;
     border-color: #0080aa; 
+}
+a.btn-block{
+    height: inherit;
+    padding-top: 22px;
+}
+a.btn.btn-oda.btn-lg{
+    color: white;
+    background-color: #00abe3;
+    margin-top: 30px;
+    border-radius: 0;
  }
- .btn-block{
-    height: 100%;
+a.btn.btn-oda.btn-lg:hover{
+     color: black;
+     background-color: #33bce9;
  }
+a.btn.btn-oda.btn-lg:focus{
+     color: white;
+     background-color: #0080aa;
+}
  #navLogo{
     position: fixed;
     left: 20px;
     top: 0;
-    z-index: 10000;
+    z-index: 100000;
     width: 8%;
- }
- #navContent .navbar-nav .nav-link{
+}
+#navContent.navbar-nav .nav-link{
     color: #001739;
     text-align: center;
- }
- #navContent .navbar-nav .nav-link:hover{
+}
+#navContent.navbar-nav.nav-link:hover{
     color: #f04950;
- }
- #navContent .navbar-nav .nav-link:focus{
+}
+#navContent.navbar-nav.nav-link:focus{
     color: #b1151b;
- }
- #takeAction{
+}
+#takeAction{
+    height:70px;
     font-family: 'Allerta Stencil', sans-serif;
- }
- #takeAction button.btn-danger{
+}
+#takeAction a.btn.btn-danger{
+    border-radius:0px;
     background-color:#ec1c24;
- }
- #takeAction button.btn-danger:hover{
+}
+#takeAction a.btn.btn-danger:hover{
     background-color: #f04950;
- }
- #takeAction button.btn-danger:focus{
+    color: black;
+}
+#takeAction a.btn.btn-danger:focus{
     background-color: #b1151b;
- }
- #navigation{
+}
+#navigation{
     margin: 0px;
- }
+}
+#navigation.navbar.navbar-light.bg-light.navbar-expand-lg{
+    width: 100%;
+}
 /* custom style */
 .nav-header{
     color:lightblue;
