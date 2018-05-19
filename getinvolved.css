@@ -2,14 +2,16 @@ html, body{
     margin:0;
     padding:0;
 }
+
 td{
     vertical-align: middle;
- }
- ul.nav li a{
+}
+ul.nav li a{
     font-size: 1.2em;
     font-family: 'Allerta', sans-serif;
     color: black;
     padding-top: 5px;
+
  }
  ul.nav li a:hover{
     color: red;
@@ -42,25 +44,30 @@ ul.nav li a.btn-outline-oda{
  a.btn-block{
      height: inherit;
      padding-top: 22px;
+
  }
+a.btn.btn-oda.btn-lg:focus{
+     color: white;
+     background-color: #0080aa;
+}
  #navLogo{
     position: fixed;
     left: 20px;
     top: 0;
-    z-index: 10000;
+    z-index: 100000;
     width: 8%;
- }
- #navContent .navbar-nav .nav-link{
+}
+#navContent.navbar-nav .nav-link{
     color: #001739;
     text-align: center;
- }
- #navContent .navbar-nav .nav-link:hover{
+}
+#navContent.navbar-nav.nav-link:hover{
     color: #f04950;
- }
- #navContent .navbar-nav .nav-link:focus{
+}
+#navContent.navbar-nav.nav-link:focus{
     color: #b1151b;
- }
- #takeAction{
+}
+#takeAction{
     height:70px;
     font-family: 'Allerta Stencil', sans-serif;
 }
@@ -116,6 +123,7 @@ i.fas.fa-phone-square, i.fas.fa-desktop{
                                       transparent calc(50% + 0.81px), 
                                       transparent 100%); 
 } 
+
 /* custom style */
 .nav-header{
     color:lightblue;
@@ -187,4 +195,22 @@ h5{
 }
 .form-check-label{
     font-size:13px;
+}
+
+.footer, container{
+    background-color:#03123a;
+}
+
+.odafooter{
+    color:white;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size:15px;
+}
+
+.footer-icons{
+    color:white;
+}
+
+.footer-icons{
+    list-style-type: none;
 }
