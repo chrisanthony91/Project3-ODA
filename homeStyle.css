@@ -19,6 +19,9 @@ h2{
     font-family: 'Allerta', sans-serif;
     margin-bottom: 30px;
 }
+h6{
+    margin: 0;
+}
 
 td{
     vertical-align: middle;
@@ -80,6 +83,20 @@ a.btn.btn-oda.btn-lg:focus{
      color: white;
      background-color: #0080aa;
 }
+a.btn.btn-events.btn-lg{
+    color: white;
+    background-color: #001739;
+    margin-top: 30px;
+    border-radius: 0;
+ }
+a.btn.btn-events.btn-lg:hover{
+     color: white;
+     background-color: #334561;
+ }
+a.btn.btn-events.btn-lg:focus{
+     color: white;
+     background-color: #00112b;
+}
 a.carousel-control-prev{
     position: absolute;
     top: 50%;
@@ -134,6 +151,41 @@ ol.carousel-indicators.noText{
     right: 0%;
     height: 100%;
 }
+.stats{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #001739;
+    color: #33bce9;
+}
+.fDown{
+    flex-direction: column;
+}
+.iconSize{
+    height:70px;
+    padding: 0 5%;
+}
+.calendar{
+    background-color: white;
+    margin: 10px 50px;
+    padding: 40px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+div.calendar h1{
+    font-size: 5em;
+    color:#001739"
+}
+div.calendar:hover{
+    color: white;
+    background-color: #001739;
+    opacity: 1
+}
+div.calendar:hover h1{
+    color: #33bce9;
+    opacity: 1
+}
 
 #navLogo{
     position: fixed;
@@ -162,6 +214,7 @@ ol.carousel-indicators.noText{
 }
 #takeAction a.btn.btn-danger:hover{
     background-color: #f04950;
+    color: black;
 }
 #takeAction a.btn.btn-danger:focus{
     background-color: #b1151b;
@@ -250,18 +303,30 @@ ol.carousel-indicators.noText{
 }
 #ctaButton.btn.btn-danger:hover{
     background-color: #f04950;
+    color: black;
 }
 #ctaButton.btn.btn-danger:focus{
     background-color: #b1151b;
 }
-#stats{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #001739;
-    color: #33bce9;
+#getInvolved{
+    text-align: center;
+    padding: 60px 0px;
+    background-color: white;
 }
-#stats h1,h2,h3,h4,h5{
-    margin: 0;
+#getInvolved .iconSize{
+    height: 200px;
+}
+#events{
+    background-image: url(images/beachTrash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+ #eventOverlay{
+    text-align: center;
+    padding: 60px 5%;
+    background-color: rgba(0, 171, 227, 0.8);
+
 }
 
 /* bubble css */
