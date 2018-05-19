@@ -1,21 +1,7 @@
-
-/* reset */
-/* *{
+html, body{
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
-
-html, body{
-    height:100%;
-} */
-
-/* global */
-
-/* div{
-    width:100%;
-} */
-
 td{
     vertical-align: middle;
  }
@@ -24,41 +10,38 @@ td{
     font-family: 'Allerta', sans-serif;
     color: black;
     padding-top: 5px;
-    padding-bottom: 0px;
  }
  ul.nav li a:hover{
     color: red;
  }
  
  .navbar{
-    /* position: sticky;
-    top: 10px;*/
+    z-index: 100;
     padding: 0;
-    /* width: 85%; */
-    height: 50px;
+    height: 70px;
     float: left;
-    background-color: white;
     font-family: 'Allerta', sans-serif;
+}
+ul.nav li a.btn-outline-oda{
+    color: #00abe3;
+    background-color: transparent;
+    background-image: none;
+    border-color: #00abe3;
+    margin: 0 20px;
  }
- .btn-outline-oda{
-   color: #00abe3;
-   background-color: transparent;
-   background-image: none;
-   border-color: #00abe3;
-   margin: 0 20px;
+ ul.nav li a.btn-outline-oda:hover{
+     color: white;
+     background-color: #00abe3;
+     border-color: #0080aa; 
  }
- .btn-outline-oda:hover{
-    color: white;
-    background-color: #00abe3;
-    border-color: #0080aa; 
+ ul.nav li a.btn-outline-oda:focus{
+     color: white;
+     background-color: #0080aa;
+     border-color: #0080aa; 
  }
- .btn-outline-oda:focus{
-    color: white;
-    background-color: #0080aa;
-    border-color: #0080aa; 
- }
- .btn-block{
-    height: 100%;
+ a.btn-block{
+     height: inherit;
+     padding-top: 22px;
  }
  #navLogo{
     position: fixed;
@@ -78,20 +61,61 @@ td{
     color: #b1151b;
  }
  #takeAction{
+    height:70px;
     font-family: 'Allerta Stencil', sans-serif;
- }
- #takeAction button.btn-danger{
+}
+#takeAction a.btn.btn-danger{
+    border-radius:0px;
     background-color:#ec1c24;
- }
- #takeAction button.btn-danger:hover{
+}
+#takeAction a.btn.btn-danger:hover{
     background-color: #f04950;
- }
- #takeAction button.btn-danger:focus{
+    color: black;
+}
+#takeAction a.btn.btn-danger:focus{
     background-color: #b1151b;
- }
+}
  #navigation{
     margin: 0px;
  }
+
+ #footer{
+    margin-bottom: 0px;
+    padding: 30px 30px 40px 30px;
+    color: white;
+}
+#footer h3{
+    padding: 5px;
+}
+#footer h5{
+    font-family: 'Allerta Stencil', sans-serif;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#footer a:hover{
+    text-decoration: none;
+    color: #33bce9;
+}
+i.fab.fa-facebook-f, i.fab.fa-twitter, i.fab.fa-youtube{
+    font-size: 1.6em;
+}
+i.fas.fa-phone-square, i.fas.fa-desktop{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.line{
+        width:100%;
+        height:200px;
+        background: linear-gradient(to right, transparent 0%, 
+                                      transparent calc(50% - 0.81px), 
+                                      white calc(50% - 0.8px), 
+                                      white calc(50% + 0.8px), 
+                                      transparent calc(50% + 0.81px), 
+                                      transparent 100%); 
+} 
 /* custom style */
 .nav-header{
     color:lightblue;
