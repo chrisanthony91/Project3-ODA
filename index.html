@@ -18,45 +18,282 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-light bg-light navbar-expand-lg" id="navigation">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row collapse navbar-collapse fixed-top" id="navbarContent" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">
+                <div class="col-md-2 col-lg-1">
+                    <a href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
+                </div>
+                <div class="col-md-10 col-lg-9">
+                    <ul class="nav mr-auto justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Who We Are</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="whatwedo.html">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="getinvolved.html">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-oda my-2 my-sm-0" href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-2" id="takeAction">
+                    <a class="btn btn-danger btn-block" href="getinvoled.html" >
+                        Take Action <img src="images/nav-diver.svg" style="width: 50px; padding: 0 0 5px 5px;">
+                    </a>
+                </div>
+            </div>   
+        </nav>
+        
+        
         <div id="heroSpace">
             <video width="100%" height="auto" autoplay loop>
                 <source src="images/sampleVideo.mp4" type="video/mp4">
             </video>
+            <div id="videoOverlay"></div>
+        </div>      
+        <div id="heroText">
+            <h1>OCEAN DEFENDERS ALLIANCE</h1>
+            <h4>Working for a debris free sea</h4>
         </div>
-            
-        <a href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
 
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-            <a class="navbar-brand"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> <!--hamburger button-->
-            
-            <!-- Nav Links  -->
-            <div class="collapse navbar-collapse" id="navContent"> 
-                <ul class="navbar-nav ml-auto">
-                    <!--Who We Are link-->
-                    <li><a class="nav-link" href="#">Who We Are</a></li>
-                    <!--What We Do link-->
-                    <li><a class="nav-link" href="whatWeDo.html">What We Do</a></li>
-                    <!--Get Involved link-->
-                    <li><a class="nav-link" href="getInvolved.html">Get Involved</a></li>
-                    <!--Contact link-->
-                    <li><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-                <button class="btn btn-outline-oda my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+        <div class="container-fluid">
+            <div class="row" id="firstRow">
+                <section class="col-sm-12 col-md-6 col-lg-7" id="theProblem"> <!-- the problem -->
+                    <h2>The Problem</h2>
+                    <p>
+                        There are many types of pollution that originate on land and which affect the ocean, 
+                        and most people are aware of some of the problems, such as oil spills, toxic waste, 
+                        sewage, and fertilizer runoff. However, there is also pollution which originates at sea; 
+                        such as nets and traps from ships.
+                        <br><br>
+                        ODA’s goals are to reduce the creation of such pollution, remove existing deposits
+                        from marine ecosystems, and educate the public beyond simply informing them--we seek
+                        to inspire them to become actively involved in the solutions.
+                    </p>
+                    <a type="button" class="btn btn-oda btn-lg" href="#">More on the Problem</a>
+                </section>
+                <section class="col-sm-12 col-md-6 col-lg-5" id="ourMission">
+                    <div id="indicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#indicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#indicators" data-slide-to="1"></li>
+                            <li data-target="#indicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item uniform-3 active"> <!-- mission -->
+                                <h2>Our Mission</h2>
+                                <p>
+                                    Ocean Defenders Alliance works to clean and protect marine ecosystems through 
+                                    documentation, education, and meaningful action. Working with affected communities, 
+                                    we focus primarily on the reduction and removal of man-made debris posing serious 
+                                    threats to ocean wildlife and habitats.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="carousel-item uniform-3"> <!-- vision -->
+                                <h2>Our Vision</h2>
+                                <p>
+                                    ODA envisions a world in which we educate communities and involve them in solutions 
+                                    that help ensure marine ecosystems can exist free from harm caused by human debris. 
+                                    Without abandoned fishing gear, trash, and improperly sunken vessels damaging their habitat, 
+                                    marine flora and fauna will be able to thrive.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="carousel-item uniform-3"> <!-- values -->
+                                <h2>Our Values</h2>
+                                <p>
+                                    1. Clear Focus:  We do not compromise our mission, yet strive to remain flexible and open to new ideas.
+                                    <br><br>    
+                                    2. Intelligent Planning:  We act strategically - with forethought, diligence, and comprehensive analysis. 
+                                    <br><br>    
+                                    3. Inspire and Empower: Raise awareness and motivate others through action and education.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
             </div>
-        </nav>
-        <table id="takeAction">
-            <tr>
-                <td style="text-align: center;"><a href="page.html"></a>Take Action</td>
-                <td style="text-align: left;"><img id="taIcon" src="images/nav-diver.svg" alt="scuba diver icon"></td>
-            </tr>
-        </table>
 
+            <section class="row align-self-center" id="cta"> <!-- cta -->
+                <div class="col-lg-1" style="background-color:#33bce9;"></div>
+                <div class="col-lg-2 uniform-1 text-right" style="padding-top:0; padding-bottom: 0; background-color:#33bce9">
+                    <img src="images/subscribe-diver.svg" id="ctaIcon">
+                </div>
+                <div class="col-lg-3 uniform-1" style="background-color:#33bce9; padding-left: 50px; padding-top: 1.5%;">
+                    <h3 class="bubbles" style="color:white;">Join the Alliance</h3>
+                    <h5>ODA news from out at sea<br>Sent to you on dry land</h5>
+                </div>
+                <div class="col-lg-1" style="padding-left: 0;">
+                    <div class="uniform-1" id="triangle"></div>
+                </div>
+                <div class="col-lg-5" style="padding-top: 3%;"> 
+                    <form class="form-inline">
+                        <input type="password" class="form-control col-md-12 col-lg-8" id="inputPassword2" placeholder="Your Email" style="border-radius: 0;">
+                        <button href="#" class="btn btn-danger" id="ctaButton">Subscribe</button>
+                    </form>
+                </div>
+            </section>
 
-        <div style="background-color: aqua; height: 2000px;"></div>
+            <section class="row"> <!-- What We Do --> 
+                <div class="col-sm-12 col-lg-5 cImage"> 
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators noText">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item uniform-5 active">
+                                <img class="center" src="images/scuba1.jpeg" alt="Ocean Defenders Alliance diver">
+                            </div>
+                             <div class="carousel-item uniform-5">
+                                <img class="center" src="images/outreach.jpg" alt="Ocean Defenders Alliance outreach">
+                            </div>
+                            <div class="carousel-item uniform-5">
+                                <img class="center" src="images/research.jpeg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev noText" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next noText" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-7" id="whatWeDo">
+                    <h2>What We Do</h2>
+                    <p style="text-align: left;">
+                        ODA's dedicated team of technical divers are hard at work, seeking to make coastal waters safer 
+                        and cleaner for marine wildlife - as well as humans - by permanently removing ocean debris and 
+                        checking for illegal fishing activities.
+                        <br><br>
+                        In addition to cleaning the oceans, ODA assists the California Department of Fish and Game with some 
+                        aspects of their studies of populations of fish and invertebrates. 
+                        <br><br>
+                        We believe it is important to educate communities about the importance of our oceans, so we send 
+                        representatives to schools, dive clubs, and other groups/events to give presentations on 
+                        the state of the oceans, the work we do, and how they can support or even join our efforts.
+                    </p>
+                    <a type="button" class="btn btn-oda btn-lg" href="whatwedo.html">See How We Work</a>
+                </div>
+            </section>
 
+            <section class="row"> <!-- stats -->
+                <div class="col-3 stats justify-content-center">
+                    <img class="iconSize" src="images/boat-stat-icon.svg" alt="Cleanup Expeditions Icon">
+                    <div class="fDown">
+                        <h2 style="margin: 0px">300</h2>
+                        <h6>Cleanup<br>Expeditions</h6>
+                    </div>
+                </div>
+                <div class="col-3 stats justify-content-center">
+                    <img class="iconSize" src="images/net-stat-icon.svg" alt="Netting Retrieved Icon">
+                    <div class="fDown">
+                        <h2 style="margin: 0px">12,000</h2>
+                        <h6>lbs of Netting<br>Retrieved</h6>
+                    </div>
+                </div>
+                <div class="col-3 stats justify-content-center">
+                    <img class="iconSize" src="images/traps-stat-icon.svg" alt="Traps Recovered Icon">
+                    <div class="fDown">
+                        <h2 style="margin: 0px">150</h2>
+                        <h6>Traps<br>Removed</h6>
+                    </div>
+                </div>
+                <div class="col-3 stats justify-content-center">
+                    <img class="iconSize" src="images/teach-stat-icon.svg" alt="Educational Presentations Icon">
+                    <div class="fDown">
+                        <h2 style="margin: 0px">150</h2>
+                        <h6>Educational<br>Presentations</h6>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="getInvolved"> <!-- Take Action-->
+                <div class="col-12">
+                    <h2 style="color: #ec1c24">Take Action</h2>
+                </div>
+                <div class="col-4">
+                    <img class="iconSize" src="images/volunteer.svg" alt="Volunteer">
+                    <br>
+                    <a type="button" class="btn btn-oda btn-lg" href="#">Volunteer</a>
+                </div>
+                <div class="col-4">
+                    <img class="iconSize" src="images/donate.svg" alt="Volunteer">
+                    <br>
+                    <a type="button" class="btn btn-oda btn-lg" href="#">Donate</a>
+                </div>
+                <div class="col-4 align-self-end">
+                    <img src="images/report.svg" alt="Volunteer" height="150px">
+                    <br>
+                    <a type="button" class="btn btn-oda btn-lg" href="#">Report Debris</a>
+                </div>
+            </section>
+        </div>
+
+        <section class="container-fluid" id="events">
+                <div class="row text-center" id="eventOverlay">
+                    <div class="col-12">
+                        <h2 style="color: #001739">Upcoming Events</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="calendar">
+                            <h5>May</h58>
+                            <h1>19</h1>
+                            <p>8:00am</p>
+                            <h6>Huntington Beach, CA</h6>
+                            <p>"Hands Across the Sand protest"</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="calendar">
+                            <h5>May</h5>
+                            <h1>20</h1>
+                            <p>7:00am</p>
+                            <h6>San Pedro, CA</h6>
+                            <p>"UW cleanup"</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="calendar">
+                            <h5>June</h5>
+                            <h1>20</h1>
+                            <p>9:00am</p>
+                            <h6>Newport Beach, CA</h6>
+                            <p>"Neport harbor cleanup drive"</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a type="button" class="btn btn-events btn-lg" href="#">More Events</a>
+                    </div>
+                </div>
+            </section>
+
+        
 
 
 
@@ -64,11 +301,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-        <!-- take action button script -->
-        <script>
-            $("#takeAction").bind("click",function() {
-                location = "index.html";
-            });
-        </script>
+        <script src="homeJs.js"></script>
     </body>
 </html>
