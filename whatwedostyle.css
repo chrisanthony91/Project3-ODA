@@ -184,6 +184,49 @@ h5{
 
 #carouselInfographic{
     margin: 5% auto 0% auto;
-
 }
+
+/* chris "get involved" */
+
+.iconSize{
+    height:70px;
+    padding: 0 5%;
+ }
+ a.btn.btn-oda.btn-lg{
+    color: white;
+    background-color: #00abe3;
+    margin-top: 30px;
+    border-radius: 0;
+ }
+ a.btn.btn-oda.btn-lg:hover{
+     color: black;
+     background-color: #33bce9;
+ }
+ a.btn.btn-oda.btn-lg:focus{
+     color: white;
+     background-color: #0080aa;
+ }
+ #getInvolved .iconSize{
+    height: 200px;
+ }
+ 
+ h2{
+    font-family: 'Allerta', sans-serif;
+    margin-bottom: 30px;
+ }
+
+ a.btn.btn-events.btn-lg{
+    color: white;
+    background-color: #001739;
+    margin-top: 30px;
+    border-radius: 0;
+ }
+ a.btn.btn-events.btn-lg:hover{
+     color: white;
+     background-color: #334561;
+ }
+ a.btn.btn-events.btn-lg:focus{
+     color: white;
+     background-color: #00112b;
+ }
 
