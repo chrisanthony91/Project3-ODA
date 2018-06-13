@@ -19,7 +19,7 @@ a.btn.btn-events.btn-lg:focus{
      color: white;
      background-color: #00112b;
 }
-a.btn.btn-oda.btn-lg{
+a.btn.btn-oda.btn-lg, a.btn.btn-oda.btn-sm{
     color: white;
     background-color: #0080aa;
     margin-top: 30px;
@@ -29,7 +29,7 @@ a.btn.btn-oda.btn-lg:hover{
      color: black;
      background-color: #33bce9;
  }
-a.btn.btn-oda.btn-lg:focus{
+a.btn.btn-oda.btn-lg:focus, a.btn.btn-oda.btn-sm:focus{
      color: white;
      background-color: #0080aa;
 }
@@ -201,6 +201,8 @@ button.btn-outline-oda{
     font-size: 1.2em;
     color: #001739;
 }
+
+
 #tog{
     font-family: 'Allerta Stencil', sans-serif;
     font-size: .6em;
@@ -272,9 +274,7 @@ button.btn-outline-oda{
     padding: 60px 0px;
     background-color: white;
 }
-#getInvolved .iconSize{
-    height: 200px;
-}
+
 #heroSpace{
     top: 0;
     padding: 0;
@@ -481,6 +481,15 @@ z-index: 1;
     a.carousel-control-prev{
         left: -2%;
     } 
+    .iconSize2{
+        width: 50%;
+    }
+    .iconSize3{
+        width: 60%;
+    }
+    #getInvolved .btn.btn-oda.btn-lg{
+        display: none;
+    }
 }    
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /* for tablet (portrait)*/
@@ -566,6 +575,15 @@ z-index: 1;
     a.carousel-control-prev{
         left: -7%;
     } 
+    .iconSize2{
+        width: 40%;
+    }
+    .iconSize3{
+        width: 50%;
+    }
+    #getInvolved .btn.btn-oda.btn-sm{
+        display: none;
+    }
  } 
 
  @media only screen and (min-width: 992px){ /* for desktop*/
@@ -626,7 +644,7 @@ z-index: 1;
         width: 8%;
     }
     #heroSpace{
-        height: 750px;
+        height: 670px;
     }
     #heroText{
         top: 500px;
@@ -649,4 +667,13 @@ z-index: 1;
     a.carousel-control-prev{
         left: -12.5%;
     } 
+    .iconSize2{
+        width: 40%;
+    }
+    .iconSize3{
+        width: 50%;
+    }
+    #getInvolved .btn.btn-oda.btn-sm{
+        display: none;
+    }
  } 
