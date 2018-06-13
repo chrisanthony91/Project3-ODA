@@ -13,15 +13,14 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" rel="stylesheet">
         <!-- Custom Style Sheet -->
         <link href="homeStyle.css" type="text/css" rel="stylesheet">
-        <!-- Hotjar Tracking Code  -->
-        
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light navbar-expand-lg" id="navigation">
-            <a class="navbar-brand"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <!-- old nav -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
+            <a class="navbar-brand" href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-anchor"></i>
             </button>
             <div class="row collapse navbar-collapse fixed-top" id="navbarContent" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">
                 <div class="col-md-2 col-lg-1">
@@ -53,14 +52,58 @@
                     </a>
                 </div>
             </div>   
+        </nav> -->
+
+        <!-- new nav -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <a href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-anchor anchorSize"><div id="tog">MENU</div></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="whatwedo.html">What We Do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="getinvolved.html">Get Involved</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="search1">
+                <input class="form-control mr-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-oda my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div id="search2"> <!--responsive searchbar -->
+                <div class="form-row mx-auto my-3">
+                    <div class="col-10">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-block btn-outline-oda mx-auto" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                </div>
+                <div id="takeAction">
+                <a class="btn btn-danger btn-block" href="getinvolved.html">
+                    Take Action <img src="images/nav-diver.svg" style="width: 50px; padding: 0 0 5px 5px;">
+                </a>
+                </div>
+            </div>
         </nav>
         
         
         <div id="heroSpace">
-            <!-- <video width="100%" height="auto" autoplay loop>
-                <source src="images/sampleVideo.mp4" type="video/mp4">
-            </video> -->
-            <img src="images/replacement_hero.jpeg" width="100%">
+            <video width="100%" height="auto" autoplay loop>
+                <source src="images/sampleVideo7.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="images/sampleVideo.gif" width="100%"> -->
             <div id="videoOverlay"></div>
         </div>      
         <div id="heroText">
@@ -138,27 +181,28 @@
             </div>
 
             <section class="row align-self-center" id="cta"> <!-- cta -->
-                <div class="col-lg-1" style="background-color:#33bce9;"></div>
-                <div class="col-lg-2 uniform-1 text-right" style="padding-top:0; padding-bottom: 0; background-color:#33bce9">
+                <div class="col-1" style="background-color:#33bce9;"></div>
+                <div class="col-2 uniform-1 text-right" style="padding-top:0; padding-bottom: 0; background-color:#33bce9">
                     <img src="images/subscribe-diver.svg" id="ctaIcon">
                 </div>
-                <div class="col-lg-3 uniform-1" style="background-color:#33bce9; padding-left: 50px; padding-top: 1.5%;">
-                    <h3 class="bubbles" style="color:white;">Join the Alliance</h3>
-                    <h5>ODA news from out at sea<br>Sent to you on dry land</h5>
+                <div class="col-3 uniform-1" style="background-color:#33bce9; padding-left: 2%; padding-top: 1.5%;">
+                    <h4 class="bubbles" style="color:white;">Join the Alliance</h4>
+                    <h6>News from out at sea<br>Sent to you on land</h6>
                 </div>
-                <div class="col-lg-1" style="padding-left: 0;">
+                <div class="col-1" style="padding-left: 0;">
                     <div class="uniform-1" id="triangle"></div>
                 </div>
-                <div class="col-lg-5" style="padding-top: 3%;"> 
+                <div class="col-5" style="padding-top: 3%;"> 
                     <form class="form-inline">
                         <input type="password" class="form-control col-md-12 col-lg-8" id="inputPassword2" placeholder="Your Email" style="border-radius: 0;">
                         <button href="#" class="btn btn-danger" id="ctaButton">Subscribe</button>
+                        <button href="#" class="btn btn-block btn-danger" id="ctaButtonBig">Subscribe</button>
                     </form>
                 </div>
             </section>
 
-            <section class="row"> <!-- What We Do --> 
-                <div class="col-sm-12 col-lg-5 cImage"> 
+            <section class="row uniform-5"> <!-- What We Do --> 
+                <div class="col-sm-12 col-md-6 col-lg-5 cImage"> 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators noText">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -186,7 +230,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-7" id="whatWeDo">
+                <div class="col-sm-12 col-md-6 col-lg-7" id="whatWeDo">
                     <h2>What We Do</h2>
                     <p style="text-align: left;">
                         ODA's dedicated team of technical divers are hard at work, seeking to make coastal waters safer 
@@ -208,28 +252,28 @@
                 <div class="col-3 stats justify-content-center">
                     <img class="iconSize" src="images/boat-stat-icon.svg" alt="Cleanup Expeditions Icon">
                     <div class="fDown">
-                        <h2 style="margin: 0px">300</h2>
+                        <h3 style="margin: 0px">300</h3>
                         <h6>Cleanup<br>Expeditions</h6>
                     </div>
                 </div>
                 <div class="col-3 stats justify-content-center">
                     <img class="iconSize" src="images/net-stat-icon.svg" alt="Netting Retrieved Icon">
                     <div class="fDown">
-                        <h2 style="margin: 0px">12,000</h2>
+                        <h3 style="margin: 0px">12,000</h3>
                         <h6>lbs of Netting<br>Retrieved</h6>
                     </div>
                 </div>
                 <div class="col-3 stats justify-content-center">
                     <img class="iconSize" src="images/traps-stat-icon.svg" alt="Traps Recovered Icon">
                     <div class="fDown">
-                        <h2 style="margin: 0px">150</h2>
+                        <h3 style="margin: 0px">150</h3>
                         <h6>Traps<br>Removed</h6>
                     </div>
                 </div>
                 <div class="col-3 stats justify-content-center">
                     <img class="iconSize" src="images/teach-stat-icon.svg" alt="Educational Presentations Icon">
                     <div class="fDown">
-                        <h2 style="margin: 0px">150</h2>
+                        <h3 style="margin: 0px">225</h3>
                         <h6>Educational<br>Presentations</h6>
                     </div>
                 </div>
@@ -319,15 +363,14 @@
                         <div class="col-3"></div>
                     </div>
                     <div class="row">
-                            <div class="col-4">
-                                <a href=""><h3>Who We Are</h3></a>
-                                <a href="whatwedo.html"><h3>What We Do</h3></a>
-                                <a href="getinvolved.html"><h3>Get Involved</h3></a>
-                                <a href=""><h3>News & Media</h3></a>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <a href=""><h4 style="padding-bottom: 10px">Who We Are</h4></a>
+                                <a href="whatwedo.html"><h4 style="padding-bottom: 10px">What We Do</h4></a>
+                                <a href="getinvolved.html"><h4 style="padding-bottom: 10px">Get Involved</h4></a>
+                                <a href=""><h4>News & Media</h4></a>
                             </div>
-                            <div class="col-4 line">
-                            </div>
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4 col-lg-4 line"></div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
                                 <h6><i class="fas fa-phone-square" style="padding-right: 10px"></i>(714) 875-5881</h6><br>
                                 <h6><i class="fas fa-desktop" style="padding-right: 10px"></i>info@oceandefenders.org</h6><br>
                                     19744 Beach Blvd.<br>
