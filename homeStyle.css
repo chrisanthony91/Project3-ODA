@@ -1,3 +1,6 @@
+/* global */
+
+/* tags */
 a{
     text-decoration: none;
     color: inherit;
@@ -19,16 +22,16 @@ a.btn.btn-events.btn-lg:focus{
      color: white;
      background-color: #00112b;
 }
+a.btn.btn-oda.btn-lg:hover{
+     color: black;
+     background-color: #33bce9;
+}
 a.btn.btn-oda.btn-lg, a.btn.btn-oda.btn-sm{
     color: white;
     background-color: #0080aa;
     margin-top: 30px;
     border-radius: 0;
- }
-a.btn.btn-oda.btn-lg:hover{
-     color: black;
-     background-color: #33bce9;
- }
+}
 a.btn.btn-oda.btn-lg:focus, a.btn.btn-oda.btn-sm:focus{
      color: white;
      background-color: #0080aa;
@@ -47,25 +50,26 @@ a.carousel-control-prev{
     max-height: 20px;
     max-width: 20px;
 } 
-/* a.carousel-control-next.noText{
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    padding: 0;
-    max-height: 20px;
-    max-width: 20px;
-}  */
-/* a.carousel-control-prev.noText{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    padding: 0;
-    max-height: 20px;
-    max-width: 20px;
-}  */
 body{
     margin:0;
     padding:0;
+}
+button.btn-outline-oda{
+    color: #00abe3;
+    background-color: transparent;
+    background-image: none;
+    border-color: #00abe3;
+    margin: 0 20px;
+}
+button.btn-outline-oda:hover{
+     color: white;
+     background-color: #00abe3;
+     border-color: #0080aa; 
+}
+button.btn-outline-oda:focus{
+     color: white;
+     background-color: #0080aa;
+     border-color: #0080aa; 
 }
 div.calendar h1{
     font-size: 5em;
@@ -100,7 +104,6 @@ i.fas.fa-phone-square, i.fas.fa-desktop{
     font-size: 1.3em;
     margin-bottom: 10px;
 }
-
 p{
     font-family: 'Open Sans', sans-serif;
     padding: 0;
@@ -109,41 +112,34 @@ p{
 td{
     vertical-align: middle;
 }
-/* ul.nav li a{
 
-    font-family: 'Allerta', sans-serif;
+/* classes */
+.anchorSize{
+    font-size: 1.2em;
     color: #001739;
-    text-align: center;
-
 }
-ul.nav li a:hover{
-    color: red;
-} */
-button.btn-outline-oda{
-    color: #00abe3;
-    background-color: transparent;
-    background-image: none;
-    border-color: #00abe3;
-    margin: 0 20px;
- }
- button.btn-outline-oda:hover{
-     color: white;
-     background-color: #00abe3;
-     border-color: #0080aa; 
- }
- button.btn-outline-oda:focus{
-     color: white;
-     background-color: #0080aa;
-     border-color: #0080aa; 
- }
-
-
+.bubbles {
+display: inline-block;
+position: relative;
+}
+.bubbles h1 {
+position: relative;
+margin: 1em 0 0;
+color: #fff;
+z-index: 2;
+}
+.individual-bubble {
+position: absolute;
+border-radius: 100%;
+bottom: 10px;
+background-color: #fff;
+z-index: 1;
+}
 .calendar{
     background-color: white;
     opacity: 0.8;
     transition: 0.5s;
 }
-
 .cImage{
     padding:0;
     width: 100%;
@@ -152,23 +148,15 @@ button.btn-outline-oda{
 .fDown{
     flex-direction: column;
 }
-.iconSize{
-    height:70px;
-    padding: 0 5%;
-}
-
 .navbar{
-    /* z-index: 100; */
     padding: 0;
-    /* height: 70px; */
-    /* float: left; */
     font-family: 'Allerta', sans-serif;
 }
+.navbar-toggler{
+    margin: 10px 30px 10px auto;
+    background-color: #00abe3;
+}
 .stats{
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 30px;
     background-color: #001739;
     color: #33bce9;
 }
@@ -179,27 +167,8 @@ button.btn-outline-oda{
     height: 300px;
     padding: auto 2%;
 }
-/* .uniform-5{
-    height: 520px;
-} */
-.navbar-toggler{
-    margin: 10px 30px 10px auto;
-    background-color: #00abe3;
-}
-.anchorSize{
-    font-size: 1.2em;
-    color: #001739;
-}
 
-
-#tog{
-    font-family: 'Allerta Stencil', sans-serif;
-    font-size: .6em;
-    line-height: 1.3;
-    color: white;
-}
-
-
+/* id's */
 #cta{
     background-color: #00abe3;
 }
@@ -245,6 +214,10 @@ button.btn-outline-oda{
     padding: 30px 30px 40px 30px;
     color: white;
 }
+#footer a:hover{
+    text-decoration: none;
+    color: #33bce9;
+}
 #footer h3{
     padding: 5px;
 }
@@ -252,51 +225,21 @@ button.btn-outline-oda{
     font-family: 'Allerta Stencil', sans-serif;
     padding-top: 20px;
 }
-#footer a:hover{
-    text-decoration: none;
-    color: #33bce9;
-}
 #getInvolved{
     text-align: center;
     padding: 60px 0px;
     background-color: white;
 }
 #heroSpace{
-    /* margin-bottom: -6px; */
     width: 100%;
     overflow: hidden;
-    /* background-image: url(images/sampleVideo.gif);
-    background-position: center;
-    background-size: cover; */
 }
-/* #heroSpace video{
-    margin: 0;
-    top: 0;
-} */
 #heroText{
     z-index: 1000;
     position: absolute;
-    /* left: 10%; */
     color: white;
     padding-right: 5%;
 }
-/* #navigation{
-    margin: 0px;
-} */
-/* #navigation.navbar.navbar-light.bg-light.navbar-expand-lg{
-    width: 100%;
-} */
-/* #navContent.navbar-nav .nav-link{
-    color: #001739;
-    text-align: center;
-}
-#navContent.navbar-nav.nav-link:hover{
-    color: #f04950;
-}
-#navContent.navbar-nav.nav-link:focus{
-    color: #b1151b;
-} */
-
 #navContent .navbar-nav .nav-link{
     font-size: 1.1em;
     font-family: 'Allerta', sans-serif;
@@ -335,11 +278,16 @@ button.btn-outline-oda{
     background-color: #b1151b;
 }
 #theProblem{
-    /* padding: 60px 160px; */
     background-color: rgba(255, 255, 255, 0.8);
 }
 #theProblem, #ourMission, #whatWeDo{
     width: 100%;
+}
+#tog{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .6em;
+    line-height: 1.3;
+    color: white;
 }
 #triangle{
     background-image: url(images/triangle.png);
@@ -347,20 +295,9 @@ button.btn-outline-oda{
     background-size: contain;
     background-position: left;
 }
-/* #videoOverlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    background-color: rgba(0, 23, 57, 0.4);
-    z-index: 10;
-} */
 #whatWeDo{
-    /* height: 500px; */
-    /* padding: 60px 120px; */
     background-color: white;
 }
-
 #wwdCarousel ol.carousel-indicators{
     position:absolute;
     bottom: 5%;
@@ -387,39 +324,20 @@ button.btn-outline-oda{
     background-position: center;
 }
 
-/* bubble css */
-.bubbles {
-display: inline-block;
-position: relative;
-}
-
-.bubbles h1 {
-position: relative;
-margin: 1em 0 0;
-color: #fff;
-z-index: 2;
-}
-
-.individual-bubble {
-position: absolute;
-border-radius: 100%;
-bottom: 10px;
-background-color: #fff;
-z-index: 1;
-}
 
 @media only screen and (max-width: 767px){ /* for mobile*/
+    /* tags */
     h1{
-        font-size: 2.3em;
+        font-size: 2.1em;
     }
     h2{
-        font-size: 2.1em;
+        font-size: 2em;
     }
     h3{
         font-size: 1.8em;
     }
     h4{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     h5{
         font-size: 1.2em;
@@ -431,62 +349,87 @@ z-index: 1;
        font-size: 0.9em;
        line-height: 1.5;  
     }
+
+    /* classes */
     .calendar{
         margin: 10px 5%;
         padding: 40px;
-    }
-    .footLink{
-        text-align: center;
-    }
-    .uniform-5{
-        height: 400px;
-        overflow: hidden;
     }
     .center{
         position: absolute;
         left: -25%;
         height: 100%;
     }
+    .footLink{
+        text-align: center;
+    }
+    .iconSize{
+        height: 45px;
+        padding: 0 5%;
+    }
+    .iconSize2{
+        width: 50%;
+    }
+    .iconSize3{
+        width: 60%;
+    }
+    .line{
+        margin: 20px 0 25px 0;
+        width:100%;
+        height:50px;
+        background: linear-gradient(to right, transparent 0%, 
+                                    transparent calc(50% - 0.81px), 
+                                    white calc(50% - 0.8px), 
+                                    white calc(50% + 0.8px), 
+                                    transparent calc(50% + 0.81px), 
+                                    transparent 100%); 
+    } 
+    .stats{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .uniform-5{
+        height: 400px;
+        overflow: hidden;
+    }
+
+    /* id's */
     #ctaButton{
         display: none;
     }
-    /* #ctaNews h4{
-        font-size: 1.7em;
-    }*/
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        height: 120px
+    }
     #ctaNews h6{
         font-size: 0.9em;
     }
-    #search1{
+    #getInvolved .btn.btn-oda.btn-lg{
         display: none;
-    }
-    #navContent .navbar-nav .nav-link{
-        font-size: 1.5em;
-    }
-    #takeAction a.btn.btn-danger{
-        height: 56px;
-        padding-top: 14px;
-    }
-    #navLogo{
-        width: 18%;
     }
     #heroSpace{
         height: fit-content;
         margin-bottom: -6px;
     }
     #heroText{
-        top: 22.5%;
+        top: 18%;
         left: 6%;
-        /* text-align: center; */
     }
-    /* #videoOverlay{
-        height: 500px;
-    } */
-    #triangle{
-        display: none;
+    #iconText h3{
+        padding-top: 10px;
+        font-size: 1.5em;
     }
-    #theProblem{
-        padding: 40px 5%;
-        text-align: center;
+    #iconText h6{
+        font-size: 0.8em;
+    }
+    #navContent .navbar-nav .nav-link{
+        font-size: 1.5em;
+    }
+    #navLogo{
+        width: 18%;
     }
     #ourMission{
         padding: 40px 5%;
@@ -497,7 +440,6 @@ z-index: 1;
     }
     #ourMission ol.carousel-indicators{
         position:absolute;
-        /* bottom: 5%; */
         bottom: -5%;
     }
     #ourMission a.carousel-control-next{
@@ -506,36 +448,24 @@ z-index: 1;
     #ourMission a.carousel-control-prev{
         left: -2%;
     } 
-    #ctaIcon{
-        position: absolute;
-        bottom: 0;
-        right: 25%;
-        height: 120px
-    }
-    .iconSize2{
-        width: 50%;
-    }
-    .iconSize3{
-        width: 60%;
-    }
-    #getInvolved .btn.btn-oda.btn-lg{
+    #search1{
         display: none;
     }
-
-    .line{
-        margin: 20px 0 25px 0;
-        width:100%;
-        height:50px;
-        background: linear-gradient(to right, transparent 0%, 
-                                      transparent calc(50% - 0.81px), 
-                                      white calc(50% - 0.8px), 
-                                      white calc(50% + 0.8px), 
-                                      transparent calc(50% + 0.81px), 
-                                      transparent 100%); 
-    } 
+    #takeAction a.btn.btn-danger{
+        height: 56px;
+        padding-top: 14px;
+    }
+    #theProblem{
+        padding: 40px 5%;
+        text-align: center;
+    }
+    #triangle{
+        display: none;
+    }
 }    
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /* for tablet (portrait)*/
+    /* tags */
     h1{
          font-size: 2.8em;
     }
@@ -558,6 +488,8 @@ z-index: 1;
         font-size: 0.9em;
         line-height: 1.4;
     }
+
+    /* classes */
     .calendar{
         margin: 10px 60px;
         padding: 40px;
@@ -567,78 +499,16 @@ z-index: 1;
         left: -50%;
         height: 100%;
     }
-    .uniform-5{
-        height: 600px;
-        overflow: hidden;
-    }
-
-    #navContent .navbar-nav .nav-link{
-        font-size: 1.5em;
-    }
-    #theProblem{
-        padding: 45px 5%;
-    }
-    #whatWeDo{
-        padding: 45px 5%;
-    }
-    #ctaButton{
-        display: none;
-    }
-    #search1{
-        display: none;
-    }
-    #takeAction a.btn.btn-danger{
-        height: 66px;
-        padding-top: 20px;
-    }
-    #navLogo{
-        width: 10%;
-    }
-    #heroSpace{
-        height: fit-content;
-        margin-bottom: -6px;
-    }
-    #heroText{
-        top: 50%;
-        left: 9%;
-    }
-    /* #videoOverlay{
-        height: inherit;
-    } */
-    #ourMission{
-        padding: 45px 5%;
-    }
-    #ourMission p, #ourMission h2{
+    .iconSize{
+        height: 60px;
         padding: 0 5%;
     }
-    #ourMission ol.carousel-indicators{
-        position:absolute;
-        /* bottom: 5%; */
-        bottom: -15%;
-    }
-    #ourMission a.carousel-control-next{
-        right: -7%;
-    }
-    #ourMission a.carousel-control-prev{
-        left: -7%;
-    }
-    #ctaIcon{
-        position: absolute;
-        bottom: 0;
-        right: 25%;
-        height: 110px;
-    }
-    
     .iconSize2{
         width: 40%;
     }
     .iconSize3{
         width: 50%;
     }
-    #getInvolved .btn.btn-oda.btn-sm{
-        display: none;
-    }
-
     .line{
         width:100%;
         height:200px;
@@ -648,10 +518,84 @@ z-index: 1;
                                       white calc(50% + 0.8px), 
                                       transparent calc(50% + 0.81px), 
                                       transparent 100%); 
+    } 
+    .stats{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }    
+    .uniform-5{
+        height: 600px;
+        overflow: hidden;
+    }
+
+    /* id's */
+    #ctaButton{
+        display: none;
+    }
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        height: 110px;
+    }
+    #getInvolved .btn.btn-oda.btn-sm{
+        display: none;
+    }    
+    #heroSpace{
+        height: fit-content;
+        margin-bottom: -6px;
+    }
+    #heroText{
+        top: 50%;
+        left: 9%;
+    }
+    #iconText h3{
+        font-size: 1.7em;
+    }
+    #iconText h6{
+        font-size: 0.9em;
+    }
+    #navContent .navbar-nav .nav-link{
+        font-size: 1.5em;
+    }
+    #navLogo{
+        width: 10%;
+    }
+    #ourMission{
+        padding: 45px 5%;
+    }
+    #ourMission p, #ourMission h2{
+        padding: 0 5%;
+    }
+    #ourMission ol.carousel-indicators{
+        position:absolute;
+        bottom: -15%;
+    }
+    #ourMission a.carousel-control-next{
+        right: -7%;
+    }
+    #ourMission a.carousel-control-prev{
+        left: -7%;
+    }
+    #search1{
+        display: none;
+    }
+    #takeAction a.btn.btn-danger{
+        height: 66px;
+        padding-top: 20px;
+    }
+    #theProblem{
+        padding: 45px 5%;
+    }
+    #whatWeDo{
+        padding: 45px 5%;
+    }    
 } 
- } 
 
  @media only screen and (min-width: 992px){ /* for desktop*/
+    /* tags */
     h1{
         font-size: 2.9em;
     }
@@ -675,11 +619,7 @@ z-index: 1;
         line-height: 1.5;
     }
 
-
-    /* ul.nav li a{
-        font-size: 1.1em;
-        padding-top: 5px;
-    } */
+    /* classes */
     .calendar{
         margin: 10px 50px;
         padding: 40px;
@@ -689,61 +629,16 @@ z-index: 1;
         left: -15%;
         height: 100%;
     }
-    .uniform-5{
-        height: 600px;
-        overflow: hidden;
+    .iconSize{
+        height:70px;
+        padding: 0 5%;
     }
-    #search2{
-        display: none;
+    .iconSize2{
+        width: 40%;
     }
-    #theProblem{
-        padding: 60px 10%;
-    }
-    #whatWeDo{
-        padding: 60px 8%;
-    }
-    #ctaButtonBig{
-        display: none;
-    }
-    #takeAction a.btn.btn-danger{
-        height: 80px;
-        padding-top: 26px;
-    }
-    #navLogo{
-        width: 8%;
-    }
-    #heroSpace{
-        max-height: 670px;
-    }
-    #heroText{
-        top: 67%;
-        left: 10%;
-    }
-    /* #videoOverlay{
-        display: none;
-        height: 750px;
-    } */
-    #ourMission{
-        /* padding: 60px 100px; */
-        padding: 60px 7%;
-    }
-    #ourMission ol.carousel-indicators{
-        position:absolute;
-        bottom: -20%;
-    }
-    #ourMission a.carousel-control-next{
-        right: -12.5%;
-    }
-    #ourMission a.carousel-control-prev{
-        left: -12.5%;
-    }
-    #ctaIcon{
-        position: absolute;
-        bottom: 0;
-        right: 5%;
-        height: 120px;
-    }
-
+    .iconSize3{
+        width: 50%;
+    }   
     .line{
         width:100%;
         height:200px;
@@ -753,15 +648,65 @@ z-index: 1;
                                       white calc(50% + 0.8px), 
                                       transparent calc(50% + 0.81px), 
                                       transparent 100%); 
-    } 
-
-    .iconSize2{
-        width: 40%;
+    }     
+    .stats{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }     
+    .uniform-5{
+        height: 600px;
+        overflow: hidden;
     }
-    .iconSize3{
-        width: 50%;
+
+    /* id's */
+    #ctaButtonBig{
+        display: none;
+    }
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        height: 120px;
     }
     #getInvolved .btn.btn-oda.btn-sm{
         display: none;
     }
- } 
+    #heroSpace{
+        max-height: 670px;
+    }
+    #heroText{
+        top: 67%;
+        left: 10%;
+    }
+    #navLogo{
+        width: 8%;
+    }
+    #ourMission{
+        padding: 60px 7%;
+    }
+    #ourMission a.carousel-control-next{
+        right: -12.5%;
+    }
+    #ourMission a.carousel-control-prev{
+        left: -12.5%;
+    }
+    #ourMission ol.carousel-indicators{
+        position:absolute;
+        bottom: -20%;
+    }
+    #search2{
+        display: none;
+    }
+    #takeAction a.btn.btn-danger{
+        height: 80px;
+        padding-top: 26px;
+    }    
+    #theProblem{
+        padding: 60px 10%;
+    }
+    #whatWeDo{
+        padding: 60px 8%;
+    }
+} 
