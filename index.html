@@ -66,8 +66,7 @@
             <video width="100%" height="auto" autoplay loop>
                 <source src="images/sampleVideo7.mp4" type="video/mp4">
             </video>
-            <!-- <img src="images/sampleVideo.gif" width="100%"> -->
-            <div id="videoOverlay"></div>
+            <!-- <div id="videoOverlay"></div> -->
         </div>      
         <div id="heroText">
             <h1>OCEAN DEFENDERS ALLIANCE</h1>
@@ -91,7 +90,7 @@
                     <a type="button" class="btn btn-oda btn-lg" href="#">More on the Problem</a>
                 </section>
                 <section class="col-sm-12 col-md-6 col-lg-5" id="ourMission">
-                    <div id="indicators" class="carousel slide" data-ride="carousel">
+                    <div id="indicators" class="carousel slide" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#indicators" data-slide-to="0" class="active"></li>
                             <li data-target="#indicators" data-slide-to="1"></li>
@@ -144,43 +143,43 @@
             </div>
 
             <section class="row align-self-center" id="cta"> <!-- cta -->
-                <div class="col-1" style="background-color:#33bce9;"></div>
-                <div class="col-2 uniform-1 text-right" style="padding-top:0; padding-bottom: 0; background-color:#33bce9">
+                <div class="col-2 col-sm-2 col-md-1 col-lg-1" style="background-color:#33bce9;"></div>
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 uniform-1 text-right" style="padding-top:0; padding-bottom: 0; background-color:#33bce9">
                     <img src="images/subscribe-diver.svg" id="ctaIcon">
                 </div>
-                <div class="col-3 uniform-1" style="background-color:#33bce9; padding-left: 2%; padding-top: 1.5%;">
-                    <h4 class="bubbles" style="color:white;">Join the Alliance</h4>
+                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 uniform-1 py-3 py-sm-3 py-md-2 py-lg-4" id="ctaNews"> <!--padding-left: 2%; padding-top: 1.5%;" -->
+                    <h4 class="bubbles" style="color:white">Join the Alliance</h4>
                     <h6>News from out at sea<br>Sent to you on land</h6>
                 </div>
-                <div class="col-1" style="padding-left: 0;">
-                    <div class="uniform-1" id="triangle"></div>
+                <div class="col-sm-12 col-md-1 col-lg-1 uniform-1" id="triangle" style="padding-left: 0;">
+                    <!-- <div class="uniform-1" id="triangle"></div> -->
                 </div>
-                <div class="col-5" style="padding-top: 3%;"> 
+                 <div class="col-sm-12 col-md-5 col-lg-5 align-self-center py-3 py-sm-3"> <!--style="padding: 3%" -->
                     <form class="form-inline">
-                        <input type="password" class="form-control col-md-12 col-lg-8" id="inputPassword2" placeholder="Your Email" style="border-radius: 0;">
+                        <input type="password" class="form-control col-sm-12 col-md-12 col-lg-8" id="inputPassword2" placeholder="Your Email" style="border-radius: 0;">
                         <button href="#" class="btn btn-danger" id="ctaButton">Subscribe</button>
                         <button href="#" class="btn btn-block btn-danger" id="ctaButtonBig">Subscribe</button>
                     </form>
                 </div>
             </section>
 
-            <section class="row uniform-5"> <!-- What We Do --> 
+            <section class="row uniform-5" id="wwdCarousel"> <!-- What We Do --> 
                 <div class="col-sm-12 col-md-6 col-lg-5 cImage"> 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators noText">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item uniform-5 active">
-                                <img class="center" src="images/scuba1.jpeg" alt="Ocean Defenders Alliance diver">
+                            <div class="carousel-item uniform-5 active" id="wwdPic1">
+                                <!-- <img class="center" src="images/scuba1.jpeg" alt="Ocean Defenders Alliance diver" width="100%"> -->
                             </div>
-                             <div class="carousel-item uniform-5">
-                                <img class="center" src="images/outreach.jpg" alt="Ocean Defenders Alliance outreach">
+                             <div class="carousel-item uniform-5" id="wwdPic2">
+                                <!-- <img class="center" src="images/outreach.jpg" alt="Ocean Defenders Alliance outreach"> -->
                             </div>
-                            <div class="carousel-item uniform-5">
-                                <img class="center" src="images/research.jpeg" alt="Third slide">
+                            <div class="carousel-item uniform-5" id="wwdPic3">
+                                <!-- <img class="center" src="images/research.jpeg" alt="Ocean Defenders Alliance research"> -->
                             </div>
                         </div>
                         <a class="carousel-control-prev noText" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -329,14 +328,14 @@
                         <div class="col-3"></div>
                     </div>
                     <div class="row">
-                            <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="col-sm-12 col-md-4 col-lg-4 footLink">
                                 <a href=""><h4 style="padding-bottom: 10px">Who We Are</h4></a>
                                 <a href="whatwedo.html"><h4 style="padding-bottom: 10px">What We Do</h4></a>
                                 <a href="getinvolved.html"><h4 style="padding-bottom: 10px">Get Involved</h4></a>
                                 <a href=""><h4>News & Media</h4></a>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 line"></div>
-                            <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="col-sm-12 col-md-4 col-lg-4 footLink">
                                 <h6><i class="fas fa-phone-square" style="padding-right: 10px"></i>(714) 875-5881</h6><br>
                                 <h6><i class="fas fa-desktop" style="padding-right: 10px"></i>info@oceandefenders.org</h6><br>
                                     19744 Beach Blvd.<br>

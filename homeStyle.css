@@ -140,8 +140,6 @@ button.btn-outline-oda{
 
 .calendar{
     background-color: white;
-    margin: 10px 50px;
-    padding: 40px;
     opacity: 0.8;
     transition: 0.5s;
 }
@@ -158,16 +156,7 @@ button.btn-outline-oda{
     height:70px;
     padding: 0 5%;
 }
-.line{
-        width:100%;
-        height:200px;
-        background: linear-gradient(to right, transparent 0%, 
-                                      transparent calc(50% - 0.81px), 
-                                      white calc(50% - 0.8px), 
-                                      white calc(50% + 0.8px), 
-                                      transparent calc(50% + 0.81px), 
-                                      transparent 100%); 
-} 
+
 .navbar{
     /* z-index: 100; */
     padding: 0;
@@ -214,12 +203,6 @@ button.btn-outline-oda{
 #cta{
     background-color: #00abe3;
 }
-#ctaIcon{
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    height: 120px;
-}
 #ctaButton{
     border-radius:0px;
 }
@@ -235,6 +218,10 @@ button.btn-outline-oda{
 }
 #ctaButton.btn.btn-danger:focus, #ctaButtonBig.btn.btn-danger:focus{
     background-color: #b1151b;
+}
+#ctaNews{
+    background-color:#33bce9;
+    overflow: hidden;
 }
 #events{
     background-image: url(images/beachTrash.jpg);
@@ -274,23 +261,20 @@ button.btn-outline-oda{
     padding: 60px 0px;
     background-color: white;
 }
-
 #heroSpace{
-    top: 0;
-    padding: 0;
-    margin-top: 0px;
+    /* margin-bottom: -6px; */
     width: 100%;
+    overflow: hidden;
     /* background-image: url(images/sampleVideo.gif);
     background-position: center;
     background-size: cover; */
-    overflow: hidden;
 }
 /* #heroSpace video{
     margin: 0;
     top: 0;
 } */
 #heroText{
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
     /* left: 10%; */
     color: white;
@@ -363,19 +347,44 @@ button.btn-outline-oda{
     background-size: contain;
     background-position: left;
 }
-#videoOverlay{
+/* #videoOverlay{
     position: absolute;
     top: 0;
     width: 100%;
     margin: 0;
     background-color: rgba(0, 23, 57, 0.4);
     z-index: 10;
-    /* overflow: hidden; */
-}
+} */
 #whatWeDo{
     /* height: 500px; */
     /* padding: 60px 120px; */
     background-color: white;
+}
+
+#wwdCarousel ol.carousel-indicators{
+    position:absolute;
+    bottom: 5%;
+}
+#wwdCarousel a.carousel-control-next{
+    right: 5%;
+}
+#wwdCarousel a.carousel-control-prev{
+    left: 5%;
+} 
+#wwdPic1{
+    background-image: url(images/scuba1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#wwdPic2{
+    background-image: url(images/research.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#wwdPic3{
+    background-image: url(images/outreach.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* bubble css */
@@ -401,7 +410,7 @@ z-index: 1;
 
 @media only screen and (max-width: 767px){ /* for mobile*/
     h1{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     h2{
         font-size: 2.1em;
@@ -412,7 +421,7 @@ z-index: 1;
     h4{
         font-size: 1.5em;
     }
-     h5{
+    h5{
         font-size: 1.2em;
     }
     h6{
@@ -422,18 +431,30 @@ z-index: 1;
        font-size: 0.9em;
        line-height: 1.5;  
     }
-
+    .calendar{
+        margin: 10px 5%;
+        padding: 40px;
+    }
+    .footLink{
+        text-align: center;
+    }
     .uniform-5{
-    height: 400px;
-    overflow: hidden;
+        height: 400px;
+        overflow: hidden;
     }
     .center{
-    position: absolute;
-    left: -25%;
-    height: 100%;
+        position: absolute;
+        left: -25%;
+        height: 100%;
     }
     #ctaButton{
         display: none;
+    }
+    /* #ctaNews h4{
+        font-size: 1.7em;
+    }*/
+    #ctaNews h6{
+        font-size: 0.9em;
     }
     #search1{
         display: none;
@@ -449,15 +470,19 @@ z-index: 1;
         width: 18%;
     }
     #heroSpace{
-        height: 500px;
+        height: fit-content;
+        margin-bottom: -6px;
     }
     #heroText{
-        top: 250px;
+        top: 22.5%;
         left: 6%;
         /* text-align: center; */
     }
-    #videoOverlay{
+    /* #videoOverlay{
         height: 500px;
+    } */
+    #triangle{
+        display: none;
     }
     #theProblem{
         padding: 40px 5%;
@@ -470,17 +495,23 @@ z-index: 1;
     #ourMission p, #ourMission h2{
         padding: 0 10%;
     }
-    ol.carousel-indicators{
+    #ourMission ol.carousel-indicators{
         position:absolute;
         /* bottom: 5%; */
         bottom: -5%;
     }
-    a.carousel-control-next{
+    #ourMission a.carousel-control-next{
         right: -2%;
     }
-    a.carousel-control-prev{
+    #ourMission a.carousel-control-prev{
         left: -2%;
     } 
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        height: 120px
+    }
     .iconSize2{
         width: 50%;
     }
@@ -490,6 +521,18 @@ z-index: 1;
     #getInvolved .btn.btn-oda.btn-lg{
         display: none;
     }
+
+    .line{
+        margin: 20px 0 25px 0;
+        width:100%;
+        height:50px;
+        background: linear-gradient(to right, transparent 0%, 
+                                      transparent calc(50% - 0.81px), 
+                                      white calc(50% - 0.8px), 
+                                      white calc(50% + 0.8px), 
+                                      transparent calc(50% + 0.81px), 
+                                      transparent 100%); 
+    } 
 }    
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ /* for tablet (portrait)*/
@@ -515,7 +558,10 @@ z-index: 1;
         font-size: 0.9em;
         line-height: 1.4;
     }
-
+    .calendar{
+        margin: 10px 60px;
+        padding: 40px;
+    }
     .center{
         position: absolute;
         left: -50%;
@@ -549,32 +595,40 @@ z-index: 1;
         width: 10%;
     }
     #heroSpace{
-        height: 720px;
+        height: fit-content;
+        margin-bottom: -6px;
     }
     #heroText{
-        top: 450px;
+        top: 50%;
         left: 9%;
     }
-    #videoOverlay{
-        height: 720px;
-    }
+    /* #videoOverlay{
+        height: inherit;
+    } */
     #ourMission{
         padding: 45px 5%;
     }
     #ourMission p, #ourMission h2{
         padding: 0 5%;
     }
-    ol.carousel-indicators{
+    #ourMission ol.carousel-indicators{
         position:absolute;
         /* bottom: 5%; */
         bottom: -15%;
     }
-    a.carousel-control-next{
+    #ourMission a.carousel-control-next{
         right: -7%;
     }
-    a.carousel-control-prev{
+    #ourMission a.carousel-control-prev{
         left: -7%;
-    } 
+    }
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        height: 110px;
+    }
+    
     .iconSize2{
         width: 40%;
     }
@@ -584,6 +638,17 @@ z-index: 1;
     #getInvolved .btn.btn-oda.btn-sm{
         display: none;
     }
+
+    .line{
+        width:100%;
+        height:200px;
+        background: linear-gradient(to right, transparent 0%, 
+                                      transparent calc(50% - 0.81px), 
+                                      white calc(50% - 0.8px), 
+                                      white calc(50% + 0.8px), 
+                                      transparent calc(50% + 0.81px), 
+                                      transparent 100%); 
+} 
  } 
 
  @media only screen and (min-width: 992px){ /* for desktop*/
@@ -615,6 +680,10 @@ z-index: 1;
         font-size: 1.1em;
         padding-top: 5px;
     } */
+    .calendar{
+        margin: 10px 50px;
+        padding: 40px;
+    }
     .center{
         position: absolute;
         left: -15%;
@@ -644,29 +713,48 @@ z-index: 1;
         width: 8%;
     }
     #heroSpace{
-        height: 670px;
+        max-height: 670px;
     }
     #heroText{
-        top: 500px;
+        top: 67%;
         left: 10%;
     }
-    #videoOverlay{
+    /* #videoOverlay{
+        display: none;
         height: 750px;
-    }
+    } */
     #ourMission{
         /* padding: 60px 100px; */
         padding: 60px 7%;
     }
-    ol.carousel-indicators{
+    #ourMission ol.carousel-indicators{
         position:absolute;
         bottom: -20%;
     }
-    a.carousel-control-next{
+    #ourMission a.carousel-control-next{
         right: -12.5%;
     }
-    a.carousel-control-prev{
+    #ourMission a.carousel-control-prev{
         left: -12.5%;
+    }
+    #ctaIcon{
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        height: 120px;
+    }
+
+    .line{
+        width:100%;
+        height:200px;
+        background: linear-gradient(to right, transparent 0%, 
+                                      transparent calc(50% - 0.81px), 
+                                      white calc(50% - 0.8px), 
+                                      white calc(50% + 0.8px), 
+                                      transparent calc(50% + 0.81px), 
+                                      transparent 100%); 
     } 
+
     .iconSize2{
         width: 40%;
     }
