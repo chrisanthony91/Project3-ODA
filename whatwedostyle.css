@@ -1,155 +1,4 @@
-html, body{
-    padding: 0;
-    margin: 0;
-}
-td{
-    vertical-align: middle;
- }
- ul.nav li a{
-    font-size: 1.2em;
-    font-family: 'Allerta', sans-serif;
-    color: black;
-    padding-top: 5px;
- }
- ul.nav li a:hover{
-    color: red;
- }
- 
- .navbar{
-    z-index: 100;
-    padding: 0;
-    height: 70px;
-    float: left;
-    font-family: 'Allerta', sans-serif;
-}
-ul.nav li a.btn-outline-oda{
-    color: #00abe3;
-    background-color: transparent;
-    background-image: none;
-    border-color: #00abe3;
-    margin: 0 20px;
- }
- ul.nav li a.btn-outline-oda:hover{
-     color: white;
-     background-color: #00abe3;
-     border-color: #0080aa; 
- }
- ul.nav li a.btn-outline-oda:focus{
-     color: white;
-     background-color: #0080aa;
-     border-color: #0080aa; 
- }
- a.btn.btn-oda.btn-lg{
-    color: white;
-    background-color: #0080aa;
-    margin-top: 30px;
-    border-radius: 0;
- }
-a.btn.btn-oda.btn-lg:hover{
-     color: black;
-     background-color: #33bce9;
- }
-a.btn.btn-oda.btn-lg:focus{
-     color: white;
-     background-color: #0080aa;
-}
- a.btn-block{
-     height: inherit;
-     padding-top: 22px;
- }
- #navLogo{
-    position: fixed;
-    left: 20px;
-    top: 0;
-    z-index: 10000;
-    width: 8%;
- }
- #navContent .navbar-nav .nav-link{
-    color: #001739;
-    text-align: center;
- }
- #navContent .navbar-nav .nav-link:hover{
-    color: #f04950;
- }
- #navContent .navbar-nav .nav-link:focus{
-    color: #b1151b;
- }
- #takeAction{
-    height:70px;
-    font-family: 'Allerta Stencil', sans-serif;
-}
-#takeAction a.btn.btn-danger{
-    border-radius:0px;
-    background-color:#ec1c24;
-}
-#takeAction a.btn.btn-danger:hover{
-    background-color: #f04950;
-    color: black;
-}
-#takeAction a.btn.btn-danger:focus{
-    background-color: #b1151b;
-}
- #navigation{
-    margin: 0px;
- }
-
- #getInvolved{
-    text-align: center;
-    padding: 60px 0px;
-    background-color: white;
-}
-#getInvolved .iconSize{
-    height: 200px;
-}
-.iconSize{
-    height:70px;
-    padding: 0 5%;
-}
-h2{
-    margin-bottom: 30px;
-}
-#footer{
-    padding: 30px 30px 40px 30px;
-    color: white;
-}
-#footer h3{
-    padding: 5px;
-}
-#footer h5{
-    font-family: 'Allerta Stencil', sans-serif;
-    padding-top: 20px;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-#footer a:hover{
-    text-decoration: none;
-    color: #33bce9;
-}
-i.fab.fa-facebook-f, i.fab.fa-twitter, i.fab.fa-youtube{
-    font-size: 1.6em;
-}
-i.fas.fa-phone-square, i.fas.fa-desktop{
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-.line{
-        width:100%;
-        height:200px;
-        background: linear-gradient(to right, transparent 0%, 
-                                      transparent calc(50% - 0.81px), 
-                                      white calc(50% - 0.8px), 
-                                      white calc(50% + 0.8px), 
-                                      transparent calc(50% + 0.81px), 
-                                      transparent 100%); 
-} 
-
 /* custom style */
-.nav-header{
-    color:lightblue;
-    
-}
 
 h1{
     font-family: 'Allerta Stencil', sans-serif;
@@ -224,12 +73,6 @@ h5{
    
 }
 
-/* .card-right{
-    
-    margin-left: 60px;
-    
-} */
-
 .card-title{
     text-align: center;
 }
@@ -241,6 +84,7 @@ h5{
 #carouselInfographic{
     margin: 5% auto 0% auto;
 }
+/* end custom */
 
 /* chris "get involved" */
 #getInvolved{
@@ -250,25 +94,8 @@ h5{
 }
 #getInvolved .iconSize{
     height: 200px;
+}
 
-.iconSize{
-    height:70px;
-    padding: 0 5%;
- }
- a.btn.btn-oda.btn-lg{
-    color: white;
-    background-color: #00abe3;
-    margin-top: 30px;
-    border-radius: 0;
- }
- a.btn.btn-oda.btn-lg:hover{
-     color: black;
-     background-color: #33bce9;
- }
- a.btn.btn-oda.btn-lg:focus{
-     color: white;
-     background-color: #0080aa;
- }
  #getInvolved .iconSize{
     height: 200px;
  }
@@ -278,18 +105,154 @@ h5{
     margin-bottom: 30px;
  }
 
- a.btn.btn-events.btn-lg{
+ a{
+    text-decoration: none;
+    color: inherit;
+} 
+a.btn-block{
+    height: inherit;
+}
+a.btn.btn-events.btn-lg{
     color: white;
     background-color: #001739;
     margin-top: 30px;
     border-radius: 0;
- }
- a.btn.btn-events.btn-lg:hover{
+}
+a.btn.btn-events.btn-lg:hover{
      color: white;
      background-color: #334561;
  }
- a.btn.btn-events.btn-lg:focus{
+a.btn.btn-events.btn-lg:focus{
      color: white;
      background-color: #00112b;
+}
+a.btn.btn-oda.btn-lg:hover{
+     color: black;
+     background-color: #33bce9;
+}
+a.btn.btn-oda.btn-lg, a.btn.btn-oda.btn-sm{
+    color: white;
+    background-color: #0080aa;
+    margin-top: 30px;
+    border-radius: 0;
+}
+a.btn.btn-oda.btn-lg:focus, a.btn.btn-oda.btn-sm:focus{
+     color: white;
+     background-color: #0080aa;
+}
+body{
+    margin:0;
+    padding:0;
+}
+button.btn-outline-oda{
+    color: #00abe3;
+    background-color: transparent;
+    background-image: none;
+    border-color: #00abe3;
+    margin: 0 20px;
+}
+button.btn-outline-oda:hover{
+     color: white;
+     background-color: #00abe3;
+     border-color: #0080aa; 
+}
+button.btn-outline-oda:focus{
+     color: white;
+     background-color: #0080aa;
+     border-color: #0080aa; 
+}
+.anchorSize{
+    font-size: 1.2em;
+    color: #001739;
+}
+.iconSize{
+    height:70px;
+    padding: 0 5%;
  }
-
+.footLink{
+    text-align: center;
+}
+.navbar{
+    padding: 0;
+    font-family: 'Allerta', sans-serif;
+}
+.navbar-toggler{
+    margin: 10px 30px 10px auto;
+    background-color: #00abe3;
+}
+#footer{
+    margin-bottom: 0;
+    padding: 30px 30px 40px 30px;
+    color: white;
+}
+#footer a:hover{
+    text-decoration: none;
+    color: #33bce9;
+}
+#footer h3{
+    padding: 5px;
+}
+#footer h5{
+    font-family: 'Allerta Stencil', sans-serif;
+    padding-top: 20px;
+}
+#navContent .navbar-nav .nav-link{
+    font-size: 1.1em;
+    font-family: 'Allerta', sans-serif;
+    color: white;
+    text-align: center;
+} 
+#navContent .navbar-nav .nav-link:hover{
+    color: #f04950;
+}
+#navContent .navbar-nav .nav-link:focus{
+    color: #b1151b;
+}
+#navLogo{
+    width: 7%;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    z-index: 100000;
+}
+#takeAction{
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 0;
+}
+#takeAction a.btn.btn-danger{
+    height: 80px;
+    padding-top: 26px;
+    border-radius:0px;
+    background-color:#ec1c24;
+}
+#takeAction a.btn.btn-danger:hover{
+    background-color: #f04950;
+    color: black;
+}
+#takeAction a.btn.btn-danger:focus{
+    background-color: #b1151b;
+}
+#tog{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .6em;
+    line-height: 1.3;
+    color: white;
+}
+i.fab.fa-facebook-f, i.fab.fa-twitter, i.fab.fa-youtube{
+    font-size: 1.6em;
+}
+i.fas.fa-phone-square, i.fas.fa-desktop{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.line{
+        width:100%;
+        height:200px;
+        background: linear-gradient(to right, transparent 0%, 
+                                      transparent calc(50% - 0.81px), 
+                                      white calc(50% - 0.8px), 
+                                      white calc(50% + 0.8px), 
+                                      transparent calc(50% + 0.81px), 
+                                      transparent 100%); 
+    }     
+/* end chris*/

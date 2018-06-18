@@ -13,7 +13,7 @@ a.btn.btn-events.btn-lg{
     background-color: #001739;
     margin-top: 30px;
     border-radius: 0;
- }
+}
 a.btn.btn-events.btn-lg:hover{
      color: white;
      background-color: #334561;
@@ -109,9 +109,9 @@ p{
     padding: 0;
     margin: 0;
 }
-td{
+/* td{
     vertical-align: middle;
-}
+} */
 
 /* classes */
 .anchorSize{
@@ -243,7 +243,7 @@ z-index: 1;
 #navContent .navbar-nav .nav-link{
     font-size: 1.1em;
     font-family: 'Allerta', sans-serif;
-    color: #001739;
+    color: white;
     text-align: center;
 } 
 #navContent .navbar-nav .nav-link:hover{
@@ -255,7 +255,7 @@ z-index: 1;
 #navLogo{
     position: fixed;
     left: 20px;
-    top: 0;
+    top: 10px;
     z-index: 100000;
 }
 #ourMission{
@@ -429,7 +429,7 @@ z-index: 1;
         font-size: 1.5em;
     }
     #navLogo{
-        width: 18%;
+        width: 19%;
     }
     #ourMission{
         padding: 40px 5%;
@@ -681,7 +681,7 @@ z-index: 1;
         left: 10%;
     }
     #navLogo{
-        width: 8%;
+        width: 7%;
     }
     #ourMission{
         padding: 60px 7%;

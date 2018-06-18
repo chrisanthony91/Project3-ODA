@@ -31,42 +31,38 @@
 <body>
 
   <!--nav bar chris  -->
-
-  <nav class="navbar navbar-light bg-light navbar-expand-lg" id="navigation">
-    <a class="navbar-brand"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="row collapse navbar-collapse fixed-top" id="navbarContent" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">
-        <div class="col-md-2 col-lg-1">
-            <a href="index.html"><img id="navLogo" src="images/logo-small.png"></a>
-        </div>
-        <div class="col-md-10 col-lg-9">
-            <ul class="nav mr-auto justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Who We Are</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="whatwedo.html">What We Do</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="getinvolved.html">Get Involved</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-oda my-2 my-sm-0" href="#"><i class="fa fa-search"></i></a>
-                </li>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="navigation" style="background-color: #001739">
+        <a href="index.html"><img id="navLogo" src="images/darkLogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-anchor anchorSize"><div id="tog">MENU</div></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Who We Are</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="whatwedo.html">What We Do</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="getinvolved.html">Get Involved</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
             </ul>
-        </div>
-        <div class="col-md-12 col-lg-2" id="takeAction">
-            <a class="btn btn-danger btn-block" href="getinvolved.html" >
+            <form class="form-inline my-2 my-lg-0" id="search1">
+            <input class="form-control mr-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-oda my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div id="takeAction">
+            <a class="btn btn-danger btn-block" href="getinvolved.html">
                 Take Action <img src="images/nav-diver.svg" style="width: 50px; padding: 0 0 5px 5px;">
             </a>
+            </div>
         </div>
-    </div>   
-</nav>
+    </nav>
 
 <!-- Hero Space -->
         <div class="carousel-inner" style="padding-bottom: 0px; margin-bottom: 0px;">
